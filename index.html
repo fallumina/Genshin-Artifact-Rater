@@ -1,137 +1,276 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
     <title>Genshin Artifact Rater</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-<h1>Genshin Artifact Rater</h1>
 
 <div class="container">
 
-<h2>Artifact</h2>
+
+<h1>Genshin Artifact Rater</h1>
+
+
+
+<h2>Artifact Information</h2>
+
+
 
 <label>Artifact Slot</label>
+
 <select id="slot">
-    <option value="flower">Flower</option>
-    <option value="feather">Feather</option>
-    <option value="sands">Sands</option>
-    <option value="goblet">Goblet</option>
-    <option value="circlet">Circlet</option>
+
+    <option value="flower">🌸 Flower</option>
+
+    <option value="feather">🪶 Feather</option>
+
+    <option value="sands">⏳ Sands</option>
+
+    <option value="goblet">🏆 Goblet</option>
+
+    <option value="circlet">👑 Circlet</option>
+
 </select>
 
 
-<br><br>
 
 
 <label>Artifact Set</label>
+
 <select id="set">
-    <option>Choose Set</option>
+
+    <option value="">Select Set</option>
+
     <option>Emblem of Severed Fate</option>
-    <option>Golden Troupe</option>
+
     <option>Marechaussee Hunter</option>
+
+    <option>Golden Troupe</option>
+
     <option>Deepwood Memories</option>
+
+    <option>Viridescent Venerer</option>
+
+    <option>Husk of Opulent Dreams</option>
+
     <option>Blizzard Strayer</option>
+
+    <option>Crimson Witch of Flames</option>
+
     <option>Other</option>
+
 </select>
 
 
-<br><br>
 
 
 <div id="mainStatBox">
 
+
 <label>Main Stat</label>
 
+
 <select id="mainStat">
+
 </select>
 
+
 </div>
+
+
+
 
 
 <h2>Substats</h2>
 
 
-<label>Substat 1</label>
+<div class="substatRow">
+
 <select class="substat">
-    <option>Crit Rate</option>
-    <option>Crit DMG</option>
-    <option>ATK%</option>
-    <option>HP%</option>
-    <option>DEF%</option>
-    <option>Energy Recharge</option>
-    <option>Elemental Mastery</option>
+
+<option>Crit Rate</option>
+
+<option>Crit DMG</option>
+
+<option>ATK%</option>
+
+<option>HP%</option>
+
+<option>DEF%</option>
+
+<option>Energy Recharge</option>
+
+<option>Elemental Mastery</option>
+
+<option>Flat ATK</option>
+
+<option>Flat HP</option>
+
+<option>Flat DEF</option>
+
 </select>
 
-<input type="number" placeholder="Value">
+
+<input 
+type="number"
+class="subValue"
+placeholder="Value">
+
+</div>
 
 
-<br>
 
 
-<label>Substat 2</label>
+<div class="substatRow">
+
 <select class="substat">
-    <option>Crit Rate</option>
-    <option>Crit DMG</option>
-    <option>ATK%</option>
-    <option>HP%</option>
-    <option>DEF%</option>
-    <option>Energy Recharge</option>
-    <option>Elemental Mastery</option>
+
+<option>Crit Rate</option>
+
+<option>Crit DMG</option>
+
+<option>ATK%</option>
+
+<option>HP%</option>
+
+<option>DEF%</option>
+
+<option>Energy Recharge</option>
+
+<option>Elemental Mastery</option>
+
+<option>Flat ATK</option>
+
+<option>Flat HP</option>
+
+<option>Flat DEF</option>
+
 </select>
 
-<input type="number" placeholder="Value">
+
+<input 
+type="number"
+class="subValue"
+placeholder="Value">
+
+</div>
 
 
-<br>
 
 
-<label>Substat 3</label>
+
+<div class="substatRow">
+
 <select class="substat">
-    <option>Crit Rate</option>
-    <option>Crit DMG</option>
-    <option>ATK%</option>
-    <option>HP%</option>
-    <option>DEF%</option>
-    <option>Energy Recharge</option>
-    <option>Elemental Mastery</option>
+
+<option>Crit Rate</option>
+
+<option>Crit DMG</option>
+
+<option>ATK%</option>
+
+<option>HP%</option>
+
+<option>DEF%</option>
+
+<option>Energy Recharge</option>
+
+<option>Elemental Mastery</option>
+
+<option>Flat ATK</option>
+
+<option>Flat HP</option>
+
+<option>Flat DEF</option>
+
 </select>
 
-<input type="number" placeholder="Value">
+
+<input 
+type="number"
+class="subValue"
+placeholder="Value">
+
+</div>
 
 
-<br>
 
 
-<label>Substat 4</label>
+
+<div class="substatRow">
+
 <select class="substat">
-    <option>Crit Rate</option>
-    <option>Crit DMG</option>
-    <option>ATK%</option>
-    <option>HP%</option>
-    <option>DEF%</option>
-    <option>Energy Recharge</option>
-    <option>Elemental Mastery</option>
+
+<option>Crit Rate</option>
+
+<option>Crit DMG</option>
+
+<option>ATK%</option>
+
+<option>HP%</option>
+
+<option>DEF%</option>
+
+<option>Energy Recharge</option>
+
+<option>Elemental Mastery</option>
+
+<option>Flat ATK</option>
+
+<option>Flat HP</option>
+
+<option>Flat DEF</option>
+
 </select>
 
-<input type="number" placeholder="Value">
+
+<input 
+type="number"
+class="subValue"
+placeholder="Value">
+
+</div>
 
 
-<br><br>
 
 
-<button onclick="rateArtifact()">Rate Artifact</button>
 
 
-<h2 id="result"></h2>
+<button onclick="rateArtifact()">
+
+Rate Artifact
+
+</button>
+
+
+
+
+
+<div id="result">
 
 
 </div>
 
 
+
+
+</div>
+
+
+
+<script src="characters.js"></script>
+
 <script src="script.js"></script>
 
+
 </body>
+
 </html>
