@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Artifact Rater</title>
 
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Genshin Artifact Rater</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <h1>Genshin Artifact Rater</h1>
 
-<p>Welcome!</p>
+<h2>Artifact Set</h2>
+
+<select id="artifactSet">
+    <option>Crimson Witch of Flames</option>
+    <option>Marechaussee Hunter</option>
+    <option>Shimenawa's Reminiscence</option>
+    <option>Gladiator's Finale</option>
+</select>
+
+<br><br>
 
 <button id="calculateButton">
-Calculate
+Calculate Best Characters
 </button>
 
-<div id="results"></div>
+<h2>Results</h2>
+
+<div id="results">
+
+No calculation yet.
+
+</div>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
