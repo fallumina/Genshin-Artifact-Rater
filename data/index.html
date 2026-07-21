@@ -4,33 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genshin Artifact Rater</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Genshin Artifact Rater</h1>
+<div class="container">
+    <h1>Genshin Artifact Rater</h1>
 
-<h2>Artifact Set</h2>
+    <label>Artifact Set</label>
+    <select id="set">
+        <option>Gladiator's Finale</option>
+        <option>Wanderer's Troupe</option>
+        <option>Crimson Witch of Flames</option>
+        <option>Emblem of Severed Fate</option>
+        <option>Marechaussee Hunter</option>
+    </select>
 
-<select id="artifactSet">
-    <option>Crimson Witch of Flames</option>
-    <option>Marechaussee Hunter</option>
-    <option>Shimenawa's Reminiscence</option>
-    <option>Gladiator's Finale</option>
-</select>
+    <label>Sands</label>
+    <select id="sands">
+        <option>ATK%</option>
+        <option>HP%</option>
+        <option>DEF%</option>
+        <option>Energy Recharge</option>
+        <option>Elemental Mastery</option>
+    </select>
 
-<br><br>
+    <label>Goblet</label>
+    <select id="goblet">
+        <option>ATK%</option>
+        <option>HP%</option>
+        <option>DEF%</option>
+        <option>Pyro DMG Bonus</option>
+        <option>Hydro DMG Bonus</option>
+        <option>Cryo DMG Bonus</option>
+        <option>Electro DMG Bonus</option>
+        <option>Anemo DMG Bonus</option>
+        <option>Geo DMG Bonus</option>
+        <option>Dendro DMG Bonus</option>
+        <option>Physical DMG Bonus</option>
+        <option>Elemental Mastery</option>
+    </select>
 
-<button id="calculateButton">
-Calculate Best Characters
-</button>
+    <label>Circlet</label>
+    <select id="circlet">
+        <option>Crit Rate</option>
+        <option>Crit DMG</option>
+        <option>Healing Bonus</option>
+        <option>ATK%</option>
+        <option>HP%</option>
+        <option>DEF%</option>
+    </select>
 
-<h2>Results</h2>
+    <h2>Substats</h2>
 
-<div id="results">
+    <select id="sub1">
+        <option>Crit Rate</option>
+        <option>Crit DMG</option>
+        <option>ATK%</option>
+        <option>HP%</option>
+        <option>DEF%</option>
+        <option>Energy Recharge</option>
+        <option>Elemental Mastery</option>
+    </select>
 
-No calculation yet.
+    <select id="sub2">
+        <option>Crit DMG</option>
+        <option>Crit Rate</option>
+        <option>ATK%</option>
+        <option>HP%</option>
+        <option>DEF%</option>
+        <option>Energy Recharge</option>
+        <option>Elemental Mastery</option>
+    </select>
+
+    <select id="sub3">
+        <option>ATK%</option>
+        <option>Crit Rate</option>
+        <option>Crit DMG</option>
+        <option>HP%</option>
+        <option>DEF%</option>
+        <option>Energy Recharge</option>
+        <option>Elemental Mastery</option>
+    </select>
+
+    <select id="sub4">
+        <option>HP%</option>
+        <option>Crit Rate</option>
+        <option>Crit DMG</option>
+        <option>ATK%</option>
+        <option>DEF%</option>
+        <option>Energy Recharge</option>
+        <option>Elemental Mastery</option>
+    </select>
+
+    <button onclick="rateArtifact()">Rate Artifact</button>
+
+    <div id="results"></div>
 
 </div>
 
