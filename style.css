@@ -1,53 +1,255 @@
-body{
+/* Genshin Artifact Rater Theme */
 
-    font-family: Arial, sans-serif;
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
 
-    background:#202124;
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+        linear-gradient(
+            rgba(20,20,35,0.9),
+            rgba(10,10,20,0.95)
+        ),
+        url("https://wallpapercave.com/wp/wp8903368.jpg");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Title */
+
+h1 {
+    text-align: center;
+    color: #ffd86b;
+    font-size: 42px;
+    margin-bottom: 25px;
+
+    text-shadow:
+        0 0 10px rgba(255,216,107,0.5);
+}
+
+
+h2 {
+    color: #ffe6a3;
+    border-bottom: 1px solid rgba(255,216,107,0.4);
+    padding-bottom: 8px;
+}
+
+
+/* Main card */
+
+.container {
+
+    width: 90%;
+    max-width: 600px;
+
+    background:
+        rgba(30,30,50,0.85);
+
+    backdrop-filter: blur(12px);
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 30px rgba(0,0,0,0.6);
+
+    border:
+        1px solid rgba(255,216,107,0.3);
+
+}
+
+
+/* Labels */
+
+label {
+
+    display: block;
+
+    margin-top: 18px;
+
+    margin-bottom: 7px;
+
+    color: #ffe6a3;
+
+    font-weight: bold;
+
+}
+
+
+/* Dropdowns and inputs */
+
+select,
+input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    border: none;
+
+    outline: none;
+
+    background:
+        rgba(255,255,255,0.12);
+
+    color: white;
+
+    font-size: 16px;
+
+    transition: 0.2s;
+
+}
+
+
+
+select:hover,
+input:hover {
+
+    background:
+        rgba(255,255,255,0.2);
+
+}
+
+
+
+select:focus,
+input:focus {
+
+    border:
+        2px solid #ffd86b;
+
+}
+
+
+
+/* Fix dropdown options */
+
+option {
+
+    background: #202033;
 
     color:white;
 
-    max-width:800px;
+}
 
-    margin:auto;
 
-    padding:40px;
+
+/* Substat rows */
+
+.substat {
+
+    margin-bottom: 10px;
 
 }
 
-h1{
 
-    color:#ffd95c;
 
-}
+input {
 
-select{
-
-    font-size:18px;
-
-    padding:8px;
+    margin-bottom: 10px;
 
 }
 
-button{
 
-    margin-top:20px;
 
-    padding:12px 20px;
+/* Button */
 
-    font-size:18px;
+button {
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:15px;
 
     cursor:pointer;
 
+    font-size:18px;
+
+    font-weight:bold;
+
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffd86b,
+            #ffb347
+        );
+
+
+    color:#2b2030;
+
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+
 }
 
-#results{
 
-    margin-top:30px;
 
-    background:#333;
+button:hover {
 
-    padding:20px;
+    transform: translateY(-3px);
 
-    border-radius:10px;
+    box-shadow:
+        0 8px 20px rgba(255,216,107,0.4);
+
+}
+
+
+
+/* Result */
+
+#result {
+
+    text-align:center;
+
+    margin-top:25px;
+
+    color:#ffd86b;
+
+    font-size:22px;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    .container {
+
+        width:95%;
+
+        padding:25px;
+
+    }
+
+
+    h1 {
+
+        font-size:32px;
+
+    }
 
 }
