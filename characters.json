@@ -1,16 +1,333 @@
-[
-    {
-        "name": "Hu Tao",
-        "preferredSet": "Crimson Witch"
-    },
+const characters = [
 
-    {
-        "name": "Diluc",
-        "preferredSet": "Crimson Witch"
-    },
+/* =========================
+   NEUVILLETTE
+========================= */
 
-    {
-        "name": "Yoimiya",
-        "preferredSet": "Shimenawa"
-    }
+{
+character:"Neuvillette",
+name:"Neuvillette - Main DPS",
+
+sets:[
+{
+name:"Marechaussee Hunter",
+score:100
+},
+{
+name:"Heart of Depth",
+score:90
+},
+{
+name:"Nymph's Dream",
+score:85
+},
+{
+name:"Troupe of Wanderer",
+score:75
+}
+],
+
+mainStats:{
+
+sands:[
+"HP%"
+],
+
+goblet:[
+"Hydro DMG Bonus",
+"HP%"
+],
+
+circlet:[
+"Crit Rate",
+"Crit DMG",
+"HP%"
 ]
+
+},
+
+substats:{
+
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":9,
+"Energy Recharge":4,
+"Elemental Mastery":2
+
+}
+
+},
+
+
+
+
+/* =========================
+   FURINA
+========================= */
+
+{
+character:"Furina",
+name:"Furina - Sub DPS",
+
+sets:[
+{
+name:"Golden Troupe",
+score:100
+},
+{
+name:"Marechaussee Hunter",
+score:90
+},
+{
+name:"Noblesse Oblige",
+score:75
+}
+],
+
+mainStats:{
+
+sands:[
+"HP%",
+"Energy Recharge"
+],
+
+goblet:[
+"Hydro DMG Bonus",
+"HP%"
+],
+
+circlet:[
+"Crit Rate",
+"Crit DMG",
+"HP%"
+]
+
+},
+
+substats:{
+
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":9,
+"Energy Recharge":7
+
+}
+
+},
+
+
+
+
+/* =========================
+   YELAN
+========================= */
+
+{
+character:"Yelan",
+name:"Yelan - Sub DPS",
+
+sets:[
+{
+name:"Emblem of Severed Fate",
+score:100
+},
+{
+name:"Heart of Depth",
+score:85
+},
+{
+name:"Golden Troupe",
+score:85
+}
+],
+
+mainStats:{
+
+sands:[
+"HP%",
+"Energy Recharge"
+],
+
+goblet:[
+"Hydro DMG Bonus"
+],
+
+circlet:[
+"Crit Rate",
+"Crit DMG",
+"HP%"
+
+]
+
+},
+
+substats:{
+
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":8,
+"Energy Recharge":8
+
+}
+
+},
+
+
+
+
+/* =========================
+   HU TAO
+========================= */
+
+{
+character:"Hu Tao",
+name:"Hu Tao - Main DPS",
+
+sets:[
+{
+name:"Crimson Witch of Flames",
+score:100
+},
+{
+name:"Shimenawa's Reminiscence",
+score:95
+},
+{
+name:"Marechaussee Hunter",
+score:85
+}
+],
+
+mainStats:{
+
+sands:[
+"HP%"
+],
+
+goblet:[
+"Pyro DMG Bonus",
+"HP%"
+],
+
+circlet:[
+"Crit Rate",
+"Crit DMG"
+
+]
+
+},
+
+substats:{
+
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":7,
+"Elemental Mastery":6
+
+}
+
+},
+
+
+
+
+/* =========================
+   RAIDEN SHOGUN
+========================= */
+
+{
+character:"Raiden Shogun",
+name:"Raiden - Hypercarry",
+
+sets:[
+{
+name:"Emblem of Severed Fate",
+score:100
+}
+],
+
+mainStats:{
+
+sands:[
+"Energy Recharge",
+"ATK%"
+],
+
+goblet:[
+"Electro DMG Bonus",
+"ATK%"
+],
+
+circlet:[
+"Crit Rate",
+"Crit DMG"
+
+]
+
+},
+
+substats:{
+
+"Crit Rate":10,
+"Crit DMG":10,
+"Energy Recharge":9,
+"ATK%":7
+
+}
+
+},
+
+
+
+
+/* =========================
+   NAHIDA
+========================= */
+
+{
+character:"Nahida",
+name:"Nahida - Dendro Support",
+
+sets:[
+{
+name:"Deepwood Memories",
+score:100
+},
+{
+name:"Gilded Dreams",
+score:95
+}
+],
+
+mainStats:{
+
+sands:[
+"Elemental Mastery"
+],
+
+goblet:[
+"Elemental Mastery",
+"Dendro DMG Bonus"
+],
+
+circlet:[
+"Elemental Mastery",
+"Crit Rate",
+"Crit DMG"
+
+]
+
+},
+
+substats:{
+
+"Elemental Mastery":10,
+"Crit Rate":8,
+"Crit DMG":8,
+"Energy Recharge":5
+
+}
+
+}
+
+];
