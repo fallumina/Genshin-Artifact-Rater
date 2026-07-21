@@ -1,35 +1,53 @@
-body {
+body{
 
     font-family: Arial, sans-serif;
 
-    max-width: 800px;
+    background:#202124;
 
-    margin: auto;
+    color:white;
 
-    padding: 40px;
+    max-width:800px;
 
-}
+    margin:auto;
 
-h1 {
-
-    color: #4CAF50;
+    padding:40px;
 
 }
 
-button {
+h1{
 
-    padding: 10px 20px;
-
-    font-size: 16px;
-
-    cursor: pointer;
+    color:#ffd95c;
 
 }
 
-#results {
+select{
 
-    margin-top: 20px;
+    font-size:18px;
 
-    font-size: 18px;
+    padding:8px;
+
+}
+
+button{
+
+    margin-top:20px;
+
+    padding:12px 20px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+}
+
+#results{
+
+    margin-top:30px;
+
+    background:#333;
+
+    padding:20px;
+
+    border-radius:10px;
 
 }
