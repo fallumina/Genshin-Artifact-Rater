@@ -143,10 +143,7 @@ function rateArtifact() {
 
     }
 
-    // -----------------------------
-    // Substats
-    // -----------------------------
-// -----------------------------
+   // -----------------------------
 // Substats
 // -----------------------------
 
@@ -155,70 +152,35 @@ const values = document.querySelectorAll(".subValue");
 
 let subScore = 0;
 
-substats.forEach((item, i) => {
+substats.forEach((item, i)=>{
 
     const stat = item.value;
     const value = Number(values[i].value);
 
-    if (!value) return;
+    if(!value) return;
 
     const weight = build.substats[stat];
 
-    if (weight === undefined) return;
+    if(weight){
 
-
-    // Convert stat amount into approximate artifact rolls
-
-    let rolls = 0;
-
-    switch(stat) {
-
-        case "Crit Rate":
-            rolls = value / 3.9;
-            break;
-
-        case "Crit DMG":
-            rolls = value / 7.8;
-            break;
-
-        case "HP%":
-            rolls = value / 5.8;
-            break;
-
-        case "ATK%":
-            rolls = value / 5.8;
-            break;
-
-        case "DEF%":
-            rolls = value / 7.3;
-            break;
-
-        case "Energy Recharge":
-            rolls = value / 5.5;
-            break;
-
-        default:
-            rolls = 1;
+        subScore += value * weight;
 
     }
-
-
-    subScore += rolls * weight;
 
 });
 
 
-// Substats are worth 50 points
-subScore = subScore * 5;
+// Convert to /50 score
+
+subScore = subScore / 5;
 
 
-// Allow bad rolls to reduce score
-if (subScore > 50) {
+if(subScore > 50){
     subScore = 50;
 }
 
-if (subScore < -30) {
-    subScore = -30;
+if(subScore < 0){
+    subScore = 0;
 }
 
 

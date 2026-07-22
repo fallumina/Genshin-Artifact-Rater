@@ -41,20 +41,11 @@ const characters = [
 
     substats: {
       substats: {
-
-    // Wanted stats
     "HP%": 10,
     "Crit Rate": 9,
     "Crit DMG": 9,
     "Energy Recharge": 5,
     "HP": 3,
-
-    // Bad stats
-    "ATK%": -2,
-    "DEF%": -3,
-    "Elemental Mastery": -1,
-    "ATK": -3,
-    "DEF": -5
 
 }
     }
