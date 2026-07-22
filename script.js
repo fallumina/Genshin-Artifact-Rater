@@ -149,6 +149,8 @@ function rateArtifact() {
 
 const substats = document.querySelectorAll(".substat");
 const values = document.querySelectorAll(".subValue");
+console.log("Substats:", substats);
+console.log("Values:", values);
 
 let subScore = 0;
 
