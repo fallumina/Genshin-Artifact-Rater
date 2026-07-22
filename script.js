@@ -161,19 +161,28 @@ function rateArtifact() {
 
         if (build.substats[stat]) {
 
-            subScore += build.substats[stat] * value;
+            let weight = build.substats[stat];
+
+if(weight){
+
+    subScore += weight * value;
+
+}
 
         }
 
     });
 
-    score += Math.min(subScore / 10, 40);
+    score += Math.max(
+    Math.min(subScore / 25, 50),
+    -20
+);
 
     score = Math.min(Math.round(score), 100);
 
     let grade = "C";
 
-    if (score >= 90) grade = "SSS";
+    if (score >= 90) grade = "SS";
     else if (score >= 80) grade = "S";
     else if (score >= 70) grade = "A";
     else if (score >= 60) grade = "B";

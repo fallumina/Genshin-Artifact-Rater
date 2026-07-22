@@ -10,16 +10,8 @@ const characters = [
         },
         {
             name: "Heart of Depth",
-            score: 90
-        },
-        {
-            name: "Nymph's Dream",
             score: 85
         },
-        {
-            name: "2pc HP% + 2pc Hydro",
-            score: 75
-        }
     ],
 
     mainStats: {
@@ -48,16 +40,23 @@ const characters = [
     },
 
     substats: {
-        "Crit Rate": 10,
-        "Crit DMG": 10,
-        "HP%": 9,
-        "Energy Recharge": 5,
-        "Elemental Mastery": 2,
-        "ATK%": 1,
-        "DEF%": 0,
-        "HP": 0,
-        "ATK": 0,
-        "DEF": 0
+      substats: {
+
+    // Wanted stats
+    "HP%": 10,
+    "Crit Rate": 9,
+    "Crit DMG": 9,
+    "Energy Recharge": 5,
+    "HP": 3,
+
+    // Bad stats
+    "ATK%": -2,
+    "DEF%": -3,
+    "Elemental Mastery": -1,
+    "ATK": -3,
+    "DEF": -5
+
+}
     }
 }
 ];
