@@ -146,68 +146,83 @@ function rateArtifact() {
     // -----------------------------
     // Substats
     // -----------------------------
+// -----------------------------
+// Substats
+// -----------------------------
 
-  const substats = document.querySelectorAll(".substat");
+const substats = document.querySelectorAll(".substat");
 const values = document.querySelectorAll(".subValue");
 
 let subScore = 0;
-
 
 substats.forEach((item, i) => {
 
     const stat = item.value;
     const value = Number(values[i].value);
 
-
     if (!value) return;
 
+    const weight = build.substats[stat];
 
-    let weight = build.substats[stat];
+    if (weight === undefined) return;
 
 
-    if(weight){
+    // Convert stat amount into approximate artifact rolls
 
-        // positive stats
-        if(weight > 0){
+    let rolls = 0;
 
-            subScore += value * weight;
+    switch(stat) {
 
-        }
+        case "Crit Rate":
+            rolls = value / 3.9;
+            break;
 
-        // unwanted stats
-        else {
+        case "Crit DMG":
+            rolls = value / 7.8;
+            break;
 
-            subScore += value * weight;
+        case "HP%":
+            rolls = value / 5.8;
+            break;
 
-        }
+        case "ATK%":
+            rolls = value / 5.8;
+            break;
+
+        case "DEF%":
+            rolls = value / 7.3;
+            break;
+
+        case "Energy Recharge":
+            rolls = value / 5.5;
+            break;
+
+        default:
+            rolls = 1;
 
     }
+
+
+    subScore += rolls * weight;
 
 });
 
 
-// Convert raw score into /50
-let finalSubScore = subScore / 5;
+// Substats are worth 50 points
+subScore = subScore * 5;
 
 
-// Limit range
-finalSubScore = Math.max(
-    Math.min(finalSubScore, 50),
-    -20
-);
+// Allow bad rolls to reduce score
+if (subScore > 50) {
+    subScore = 50;
+}
+
+if (subScore < -30) {
+    subScore = -30;
+}
 
 
-score += finalSubScore;
-
-
-    score = Math.min(Math.round(score), 100);
-
-    let grade = "C";
-
-    if (score >= 90) grade = "SS";
-    else if (score >= 80) grade = "S";
-    else if (score >= 70) grade = "A";
-    else if (score >= 60) grade = "B";
+score += subScore;
 
     document.getElementById("result").innerHTML = `
 
