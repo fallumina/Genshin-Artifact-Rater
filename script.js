@@ -188,7 +188,7 @@ score += subScore;
 
 score = Math.round(score);
 
-let grade = "C";
+let grade;
 
 if (score >= 90) {
     grade = "SS";
