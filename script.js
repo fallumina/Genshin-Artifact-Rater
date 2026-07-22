@@ -18,7 +18,7 @@ function rateArtifact() {
 
 
     // =========================
-    // ARTIFACT SET SCORE (25)
+    // ARTIFACT SET SCORE (20)
     // =========================
 
     const set = document.getElementById("set").value;
@@ -32,19 +32,19 @@ function rateArtifact() {
         if (artifactSet.name === set) {
 
             if (index === 0) {
-                setScore = 25;
+                setScore = 20;
             }
 
             else if (index === 1) {
-                setScore = 22;
+                setScore = 17;
             }
 
             else if (index === 2) {
-                setScore = 18;
+                setScore = 15;
             }
 
             else {
-                setScore = 15;
+                setScore = 110;
             }
 
         }
@@ -78,19 +78,19 @@ function rateArtifact() {
 
         if (position === 0) {
 
-            mainScore = 25;
+            mainScore = 20;
 
         }
 
         else if (position === 1) {
 
-            mainScore = 18;
+            mainScore = 17;
 
         }
 
         else if (position === 2) {
 
-            mainScore = 12;
+            mainScore = 15;
 
         }
 
@@ -103,7 +103,7 @@ function rateArtifact() {
 
 
     // =========================
-    // SUBSTAT SCORE (50)
+    // SUBSTAT SCORE (60)
     // =========================
 
 
@@ -144,9 +144,9 @@ function rateArtifact() {
     subScore = subScore / 5;
 
 
-    if (subScore > 50) {
+    if (subScore > 60) {
 
-        subScore = 50;
+        subScore = 60;
 
     }
 
@@ -179,11 +179,15 @@ function rateArtifact() {
 
 
     let grade;
-
-
-    if (score >= 90) {
+    
+    if (score = 100) {
 
         grade = "SSS";
+
+    }
+    else if (score >= 90) {
+
+        grade = "SS";
 
     }
 
