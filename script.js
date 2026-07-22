@@ -147,36 +147,58 @@ function rateArtifact() {
     // Substats
     // -----------------------------
 
-    const substats = document.querySelectorAll(".substat");
-    const values = document.querySelectorAll(".subValue");
+  const substats = document.querySelectorAll(".substat");
+const values = document.querySelectorAll(".subValue");
 
-    let subScore = 0;
+let subScore = 0;
 
-    substats.forEach((item, i) => {
 
-        const stat = item.value;
-        const value = Number(values[i].value);
+substats.forEach((item, i) => {
 
-        if (!value) return;
+    const stat = item.value;
+    const value = Number(values[i].value);
 
-        if (build.substats[stat]) {
 
-            let weight = build.substats[stat];
+    if (!value) return;
 
-if(weight){
 
-    subScore += weight * value;
+    let weight = build.substats[stat];
 
-}
+
+    if(weight){
+
+        // positive stats
+        if(weight > 0){
+
+            subScore += value * weight;
 
         }
 
-    });
+        // unwanted stats
+        else {
 
-    score += Math.max(
-    Math.min(subScore / 25, 50),
+            subScore += value * weight;
+
+        }
+
+    }
+
+});
+
+
+// Convert raw score into /50
+let finalSubScore = subScore / 5;
+
+
+// Limit range
+finalSubScore = Math.max(
+    Math.min(finalSubScore, 50),
     -20
 );
+
+
+score += finalSubScore;
+
 
     score = Math.min(Math.round(score), 100);
 
