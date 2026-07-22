@@ -186,28 +186,36 @@ if(subScore < 0){
 
 score += subScore;
 
-    document.getElementById("result").innerHTML = `
+score = Math.round(score);
 
-        <div class="resultCard">
+let grade = "C";
 
-            <h3>${build.name}</h3>
-
-            <p>
-
-                Character: ${build.character}
-
-                <br><br>
-
-                Score: <strong>${score}/100</strong>
-
-                <br>
-
-                Grade: <strong>${grade}</strong>
-
-            </p>
-
-        </div>
-
-    `;
-
+if (score >= 90) {
+    grade = "SS";
 }
+else if (score >= 80) {
+    grade = "S";
+}
+else if (score >= 70) {
+    grade = "A";
+}
+else if (score >= 60) {
+    grade = "B";
+}
+else if (score >= 40) {
+    grade = "C";
+}
+else {
+    grade = "D";
+}
+document.getElementById("result").innerHTML = `
+
+<h3>${build.name}</h3>
+
+<p>
+Score: ${score}/100
+<br>
+Grade: ${grade}
+</p>
+
+`}
