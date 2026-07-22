@@ -1,276 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genshin Artifact Rater</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
-
 <div class="container">
 
+    <h1>Genshin Artifact Rater</h1>
 
-<h1>Genshin Artifact Rater</h1>
+    <h2>Artifact Information</h2>
 
+    <label for="slot">Artifact Slot</label>
+    <select id="slot">
+        <option value="flower">Flower 🌸</option>
+        <option value="feather">Feather 🪶</option>
+        <option value="sands">Sands ⏳</option>
+        <option value="goblet">Goblet 🏆</option>
+        <option value="circlet">Circlet 👑</option>
+    </select>
 
+    <label for="set">Artifact Set</label>
+    <select id="set">
+        <option value="Marechaussee Hunter">Marechaussee Hunter</option>
+        <option value="Heart of Depth">Heart of Depth</option>
+        <option value="Nymph's Dream">Nymph's Dream</option>
+        <option value="2pc HP% + 2pc Hydro">2pc HP% + 2pc Hydro</option>
+    </select>
 
-<h2>Artifact Information</h2>
+    <div id="mainStatBox">
 
+        <label for="mainStat">Main Stat</label>
 
+        <select id="mainStat">
+        </select>
 
-<label>Artifact Slot</label>
+    </div>
 
-<select id="slot">
+    <h2>Substats</h2>
 
-    <option value="flower">🌸 Flower</option>
+    <div class="substatRow">
+        <select class="substat">
+            <option>Crit Rate</option>
+            <option>Crit DMG</option>
+            <option>HP%</option>
+            <option>Energy Recharge</option>
+            <option>Elemental Mastery</option>
+            <option>ATK%</option>
+            <option>DEF%</option>
+            <option>HP</option>
+            <option>ATK</option>
+            <option>DEF</option>
+        </select>
 
-    <option value="feather">🪶 Feather</option>
+        <input
+            class="subValue"
+            type="number"
+            placeholder="Value">
+    </div>
 
-    <option value="sands">⏳ Sands</option>
+    <div class="substatRow">
+        <select class="substat">
+            <option>Crit Rate</option>
+            <option>Crit DMG</option>
+            <option>HP%</option>
+            <option>Energy Recharge</option>
+            <option>Elemental Mastery</option>
+            <option>ATK%</option>
+            <option>DEF%</option>
+            <option>HP</option>
+            <option>ATK</option>
+            <option>DEF</option>
+        </select>
 
-    <option value="goblet">🏆 Goblet</option>
+        <input
+            class="subValue"
+            type="number"
+            placeholder="Value">
+    </div>
 
-    <option value="circlet">👑 Circlet</option>
+    <div class="substatRow">
+        <select class="substat">
+            <option>Crit Rate</option>
+            <option>Crit DMG</option>
+            <option>HP%</option>
+            <option>Energy Recharge</option>
+            <option>Elemental Mastery</option>
+            <option>ATK%</option>
+            <option>DEF%</option>
+            <option>HP</option>
+            <option>ATK</option>
+            <option>DEF</option>
+        </select>
 
-</select>
+        <input
+            class="subValue"
+            type="number"
+            placeholder="Value">
+    </div>
 
+    <div class="substatRow">
+        <select class="substat">
+            <option>Crit Rate</option>
+            <option>Crit DMG</option>
+            <option>HP%</option>
+            <option>Energy Recharge</option>
+            <option>Elemental Mastery</option>
+            <option>ATK%</option>
+            <option>DEF%</option>
+            <option>HP</option>
+            <option>ATK</option>
+            <option>DEF</option>
+        </select>
 
+        <input
+            class="subValue"
+            type="number"
+            placeholder="Value">
+    </div>
 
+    <button onclick="rateArtifact()">
+        Rate Artifact
+    </button>
 
-<label>Artifact Set</label>
-
-<select id="set">
-
-    <option value="">Select Set</option>
-
-    <option>Emblem of Severed Fate</option>
-
-    <option>Marechaussee Hunter</option>
-
-    <option>Golden Troupe</option>
-
-    <option>Deepwood Memories</option>
-
-    <option>Viridescent Venerer</option>
-
-    <option>Husk of Opulent Dreams</option>
-
-    <option>Blizzard Strayer</option>
-
-    <option>Crimson Witch of Flames</option>
-
-    <option>Other</option>
-
-</select>
-
-
-
-
-<div id="mainStatBox">
-
-
-<label>Main Stat</label>
-
-
-<select id="mainStat">
-
-</select>
-
+    <div id="result"></div>
 
 </div>
-
-
-
-
-
-<h2>Substats</h2>
-
-
-<div class="substatRow">
-
-<select class="substat">
-
-<option>Crit Rate</option>
-
-<option>Crit DMG</option>
-
-<option>ATK%</option>
-
-<option>HP%</option>
-
-<option>DEF%</option>
-
-<option>Energy Recharge</option>
-
-<option>Elemental Mastery</option>
-
-<option>Flat ATK</option>
-
-<option>Flat HP</option>
-
-<option>Flat DEF</option>
-
-</select>
-
-
-<input 
-type="number"
-class="subValue"
-placeholder="Value">
-
-</div>
-
-
-
-
-<div class="substatRow">
-
-<select class="substat">
-
-<option>Crit Rate</option>
-
-<option>Crit DMG</option>
-
-<option>ATK%</option>
-
-<option>HP%</option>
-
-<option>DEF%</option>
-
-<option>Energy Recharge</option>
-
-<option>Elemental Mastery</option>
-
-<option>Flat ATK</option>
-
-<option>Flat HP</option>
-
-<option>Flat DEF</option>
-
-</select>
-
-
-<input 
-type="number"
-class="subValue"
-placeholder="Value">
-
-</div>
-
-
-
-
-
-<div class="substatRow">
-
-<select class="substat">
-
-<option>Crit Rate</option>
-
-<option>Crit DMG</option>
-
-<option>ATK%</option>
-
-<option>HP%</option>
-
-<option>DEF%</option>
-
-<option>Energy Recharge</option>
-
-<option>Elemental Mastery</option>
-
-<option>Flat ATK</option>
-
-<option>Flat HP</option>
-
-<option>Flat DEF</option>
-
-</select>
-
-
-<input 
-type="number"
-class="subValue"
-placeholder="Value">
-
-</div>
-
-
-
-
-
-<div class="substatRow">
-
-<select class="substat">
-
-<option>Crit Rate</option>
-
-<option>Crit DMG</option>
-
-<option>ATK%</option>
-
-<option>HP%</option>
-
-<option>DEF%</option>
-
-<option>Energy Recharge</option>
-
-<option>Elemental Mastery</option>
-
-<option>Flat ATK</option>
-
-<option>Flat HP</option>
-
-<option>Flat DEF</option>
-
-</select>
-
-
-<input 
-type="number"
-class="subValue"
-placeholder="Value">
-
-</div>
-
-
-
-
-
-
-<button onclick="rateArtifact()">
-
-Rate Artifact
-
-</button>
-
-
-
-
-
-<div id="result">
-
-
-</div>
-
-
-
-
-</div>
-
-
 
 <script src="characters.js"></script>
-
 <script src="script.js"></script>
 
-
 </body>
-
 </html>
