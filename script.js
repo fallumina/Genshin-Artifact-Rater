@@ -1,239 +1,500 @@
-function rateArtifact() {
+// =====================================
+// Genshin Artifact Rater
+// Script Engine
+// =====================================
 
-    if (!window.characters) {
 
-        document.getElementById("result").innerHTML =
-        "Character data failed to load.";
+// Wait until everything loads
+document.addEventListener("DOMContentLoaded", () => {
 
-        return;
+
+    const slot = document.getElementById("slot");
+    const mainStat = document.getElementById("mainStat");
+    const mainStatBox = document.getElementById("mainStatBox");
+
+
+    // -----------------------------
+    // Main stat dropdown controller
+    // -----------------------------
+
+
+    function updateMainStats(){
+
+
+        let stats = [];
+
+
+        if(slot.value === "flower"){
+
+            mainStatBox.style.display = "none";
+            return;
+
+        }
+
+
+        if(slot.value === "feather"){
+
+            mainStatBox.style.display = "none";
+            return;
+
+        }
+
+
+        mainStatBox.style.display = "block";
+
+
+
+        if(slot.value === "sands"){
+
+            stats = [
+                "HP%",
+                "ATK%",
+                "DEF%",
+                "Energy Recharge",
+                "Elemental Mastery"
+            ];
+
+        }
+
+
+
+        if(slot.value === "goblet"){
+
+            stats = [
+
+                "HP%",
+                "ATK%",
+                "DEF%",
+                "Elemental Mastery",
+
+                "Pyro DMG Bonus",
+                "Hydro DMG Bonus",
+                "Electro DMG Bonus",
+                "Cryo DMG Bonus",
+                "Anemo DMG Bonus",
+                "Geo DMG Bonus",
+                "Dendro DMG Bonus",
+                "Physical DMG Bonus"
+
+            ];
+
+        }
+
+
+
+        if(slot.value === "circlet"){
+
+            stats = [
+
+                "Crit Rate",
+                "Crit DMG",
+                "Healing Bonus",
+                "HP%",
+                "ATK%",
+                "DEF%",
+                "Elemental Mastery"
+
+            ];
+
+        }
+
+
+
+        mainStat.innerHTML = "";
+
+
+        stats.forEach(stat => {
+
+            let option = document.createElement("option");
+
+            option.value = stat;
+            option.textContent = stat;
+
+            mainStat.appendChild(option);
+
+        });
+
 
     }
 
 
-    // TESTING WITH NEUVILLETTE ONLY
-    const build = characters[0];
+
+    slot.addEventListener(
+        "change",
+        updateMainStats
+    );
 
 
-    let score = 0;
+    updateMainStats();
 
 
-    // =========================
-    // ARTIFACT SET SCORE (20)
-    // =========================
 
-    const set = document.getElementById("set").value;
-
-
-    let setScore = 0;
+    // -----------------------------
+    // Rate artifact button
+    // -----------------------------
 
 
-    build.sets.forEach((artifactSet, index) => {
+    window.rateArtifact = function(){
 
-        if (artifactSet.name === set) {
 
-            if (index === 0) {
-                setScore = 20;
+
+        if(typeof characters === "undefined"){
+
+            document.getElementById("result").innerHTML =
+            `
+            <h2>Error</h2>
+            <p>
+            Character database failed to load.
+            </p>
+            `;
+
+            return;
+
+        }
+
+
+
+        let results = [];
+
+
+
+        let selectedSet =
+        document.getElementById("set").value;
+
+
+
+        let selectedMain;
+
+
+
+        if(slot.value === "flower"){
+
+            selectedMain = "HP";
+
+        }
+
+        else if(slot.value === "feather"){
+
+            selectedMain = "ATK";
+
+        }
+
+        else {
+
+            selectedMain = mainStat.value;
+
+        }
+
+
+
+
+        let substats =
+        document.querySelectorAll(".substat");
+
+
+        let subValues =
+        document.querySelectorAll(".subValue");
+
+
+
+
+
+        // Check every build
+
+
+        characters.forEach(build => {
+
+
+
+            let score = 0;
+
+
+
+            // -------------------------
+            // Artifact Set Score
+            // -------------------------
+
+
+            if(build.sets){
+
+
+                let set =
+                build.sets.find(
+                    s => s.name === selectedSet
+                );
+
+
+                if(set){
+
+                    score +=
+                    set.score * 0.30;
+
+                }
+
+
             }
 
-            else if (index === 1) {
-                setScore = 17;
+
+
+
+
+            // -------------------------
+            // Main Stat Score
+            // -------------------------
+
+
+            if(build.mainStats){
+
+
+                let possible =
+                build.mainStats[slot.value];
+
+
+
+                if(possible){
+
+
+                    let index =
+                    possible.indexOf(selectedMain);
+
+
+
+                    if(index === 0){
+
+                        score += 30;
+
+                    }
+
+                    else if(index === 1){
+
+                        score += 25;
+
+                    }
+
+                    else if(index === 2){
+
+                        score += 20;
+
+                    }
+
+                    else if(index > -1){
+
+                        score += 10;
+
+                    }
+
+
+                }
+
             }
 
-            else if (index === 2) {
-                setScore = 15;
+
+
+
+
+
+
+            // -------------------------
+            // Substat Score
+            // -------------------------
+
+
+            let subScore = 0;
+
+
+
+            substats.forEach((item,index)=>{
+
+
+                let stat =
+                item.value;
+
+
+
+                let value =
+                Number(subValues[index].value) || 0;
+
+
+
+                if(
+                    build.substats &&
+                    build.substats[stat]
+                ){
+
+
+                    subScore +=
+                    build.substats[stat] *
+                    value;
+
+
+                }
+
+
+            });
+
+
+
+
+
+            // Convert substats to points
+
+            if(subScore >= 150){
+
+                score += 40;
+
+            }
+
+            else if(subScore >= 100){
+
+                score += 30;
+
+            }
+
+            else if(subScore >= 50){
+
+                score += 20;
+
             }
 
             else {
-                setScore = 110;
+
+                score += subScore / 5;
+
             }
 
-        }
 
-    });
 
 
-    score += setScore;
 
+            if(score > 100){
 
+                score = 100;
 
-    // =========================
-    // MAIN STAT SCORE (25)
-    // =========================
+            }
 
 
-    const slot = document.getElementById("slot").value;
-    const mainStat = document.getElementById("mainStat").value;
 
+            results.push({
 
-    let mainScore = 0;
+                name: build.name,
 
+                character: build.character,
 
-    if (build.mainStats[slot]) {
+                score: Math.round(score)
 
-        const possibleStats = build.mainStats[slot];
+            });
 
 
-        const position = possibleStats.indexOf(mainStat);
 
+        });
 
-        if (position === 0) {
 
-            mainScore = 20;
 
-        }
 
-        else if (position === 1) {
 
-            mainScore = 17;
 
-        }
 
-        else if (position === 2) {
+        // Sort highest first
 
-            mainScore = 15;
+        results.sort(
+            (a,b)=>b.score-a.score
+        );
 
-        }
 
-    }
 
+        displayResults(
+            results.slice(0,10)
+        );
 
-    score += mainScore;
 
+    };
 
 
 
-    // =========================
-    // SUBSTAT SCORE (60)
-    // =========================
 
 
-    const substats = document.querySelectorAll(".substat");
-    const values = document.querySelectorAll(".subValue");
+    // -----------------------------
+    // Display leaderboard
+    // -----------------------------
 
 
-    let subScore = 0;
+    function displayResults(results){
 
 
-    substats.forEach((statInput, index)=>{
+        let html =
+        "<h2>Top Characters</h2>";
 
 
-        const stat = statInput.value;
-        const value = Number(values[index].value);
 
+        results.forEach((result,index)=>{
 
-        if (!stat || !value) {
-            return;
-        }
 
+            let grade;
 
-        const weight = build.substats[stat];
 
 
-        if (weight) {
+            if(result.score >= 90){
 
-            subScore += value * weight;
+                grade = "SSS";
 
-        }
+            }
 
+            else if(result.score >= 80){
 
-    });
+                grade = "S";
 
+            }
 
-    // convert into /50
+            else if(result.score >= 70){
 
-    subScore = subScore / 5;
+                grade = "A";
 
+            }
 
-    if (subScore > 60) {
+            else if(result.score >= 60){
 
-        subScore = 60;
+                grade = "B";
 
-    }
+            }
 
+            else {
 
-    if (subScore < 0) {
+                grade = "C";
 
-        subScore = 0;
+            }
 
-    }
 
 
-    score += subScore;
+            html += `
 
+            <div class="resultCard">
 
+                <h3>
+                ${index + 1}. ${result.name}
+                </h3>
 
-    // =========================
-    // FINAL SCORE
-    // =========================
+                <p>
+                ${result.character}
+                <br>
+                Score: ${result.score}/100
+                <br>
+                Rank: ${grade}
+                </p>
 
+            </div>
 
-    score = Math.round(score);
+            `;
 
 
-    if (score > 100) {
+        });
 
-        score = 100;
 
-    }
 
+        document.getElementById("result").innerHTML = html;
 
-
-    let grade;
-    
-    if (score = 100) {
-
-        grade = "SSS";
-
-    }
-    else if (score >= 90) {
-
-        grade = "SS";
-
-    }
-
-    else if (score >= 80) {
-
-        grade = "S";
-
-    }
-
-    else if (score >= 70) {
-
-        grade = "A";
-
-    }
-
-    else if (score >= 60) {
-
-        grade = "B";
-
-    }
-
-    else if (score >= 40) {
-
-        grade = "C";
-
-    }
-
-    else {
-
-        grade = "D";
 
     }
 
 
 
-
-    document.getElementById("result").innerHTML = `
-
-        <h2>${build.name}</h2>
-
-        <h3>${score}/100</h3>
-
-        <p>
-        Grade: ${grade}
-        </p>
-
-    `;
-
-}
+});
