@@ -243,7 +243,7 @@ ${result.build}
 
 <br><br>
 
-Score: <strong>${result.score}/100</strong>
+Score: <strong>${result.score}</strong>
 
 <br>
 
