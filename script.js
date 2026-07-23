@@ -261,23 +261,25 @@ window.addEventListener("DOMContentLoaded", () => {
 
     });
 
-    score += subScore;
+    score += subScore*8;
 
 
 
-    let grade = "C";
+    let grade = "D";
 
-    if (score >= 90)
+    if (score >= 175)
         grade = "SS";
 
-    else if (score >= 80)
+    else if (score >= 150)
         grade = "S";
 
-    else if (score >= 70)
+    else if (score >= 120)
         grade = "A";
 
-    else if (score >= 60)
+    else if (score >= 100)
         grade = "B";
+    else if (score >= 80)
+        grade = "C";
 
 
 
