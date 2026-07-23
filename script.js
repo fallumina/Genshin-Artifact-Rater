@@ -1,54 +1,7 @@
 // ==============================
 // Genshin Artifact Rater
 // ==============================
-const artifactSets = [
 
-"A Day Carved From Rising Winds",
-"Aubade of Morningstar and Moon",
-"Archaic Petra",
-"Blizzard Strayer",
-"Bloodstained Chivalry",
-"Celestial Gift",
-"Crimson Witch of Flames",
-"Deepwood Memories",
-"Desert Pavilion Chronicle",
-"Disenchantment in Deep Shadow",
-"Echoes of an Offering",
-"Emblem of Severed Fate",
-"Finale of the Deep Galleries",
-"Flower of Paradise Lost",
-"Fragment of Harmonic Whimsy",
-"Gilded Dreams",
-"Gladiator's Finale",
-"Golden Troupe",
-"Heart of Depth",
-"Husk of Opulent Dreams",
-"Lavawalker",
-"Long Night's Oath",
-"Maiden Beloved",
-"Marechaussee Hunter",
-"Night of the Sky's Unveiling",
-"Nighttime Whispers in the Echoing Woods",
-"Noblesse Oblige",
-"Nymph's Dream",
-"Obsidian Codex",
-"Ocean-Hued Clam",
-"Pale Flame",
-"Retracing Bolide",
-"Scroll of the Hero of Cinder City",
-"Shimenawa's Reminiscence",
-"Silken Moon's Serenade",
-"Song of Days Past",
-"Tenacity of the Millelith",
-"Thundering Fury",
-"Thunder Soother",
-"Unfinished Reverie",
-"Vermillion Hereafter",
-"Viridescent Venerer",
-"Vourukasha's Glow",
-"Wanderer's Troupe"
-
-];
 const slot = document.getElementById("slot");
 const mainStat = document.getElementById("mainStat");
 const mainStatBox = document.getElementById("mainStatBox");
@@ -135,7 +88,54 @@ artifactSets.forEach(set => {
     setMenu.appendChild(option);
 
 });
+const artifactSets = [
 
+"A Day Carved From Rising Winds",
+"Aubade of Morningstar and Moon",
+"Archaic Petra",
+"Blizzard Strayer",
+"Bloodstained Chivalry",
+"Celestial Gift",
+"Crimson Witch of Flames",
+"Deepwood Memories",
+"Desert Pavilion Chronicle",
+"Disenchantment in Deep Shadow",
+"Echoes of an Offering",
+"Emblem of Severed Fate",
+"Finale of the Deep Galleries",
+"Flower of Paradise Lost",
+"Fragment of Harmonic Whimsy",
+"Gilded Dreams",
+"Gladiator's Finale",
+"Golden Troupe",
+"Heart of Depth",
+"Husk of Opulent Dreams",
+"Lavawalker",
+"Long Night's Oath",
+"Maiden Beloved",
+"Marechaussee Hunter",
+"Night of the Sky's Unveiling",
+"Nighttime Whispers in the Echoing Woods",
+"Noblesse Oblige",
+"Nymph's Dream",
+"Obsidian Codex",
+"Ocean-Hued Clam",
+"Pale Flame",
+"Retracing Bolide",
+"Scroll of the Hero of Cinder City",
+"Shimenawa's Reminiscence",
+"Silken Moon's Serenade",
+"Song of Days Past",
+"Tenacity of the Millelith",
+"Thundering Fury",
+"Thunder Soother",
+"Unfinished Reverie",
+"Vermillion Hereafter",
+"Viridescent Venerer",
+"Vourukasha's Glow",
+"Wanderer's Troupe"
+
+];
 function rateArtifact() {
 
     if (!window.characters) {
@@ -151,6 +151,22 @@ const results = [];
 characters.forEach(build => {
 
     let score = 0;
+window.addEventListener("DOMContentLoaded", () => {
+
+    const setMenu = document.getElementById("set");
+
+    artifactSets.forEach(set => {
+
+        const option = document.createElement("option");
+
+        option.value = set;
+        option.textContent = set;
+
+        setMenu.appendChild(option);
+
+    });
+
+});
 
     // -----------------------------
     // Artifact Set
