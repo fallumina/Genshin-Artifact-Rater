@@ -86,8 +86,9 @@ function rateArtifact() {
         return;
 
     }
+const results = [];
 
-    const build = characters[0];
+characters.forEach(build => {
 
     let score = 0;
 
@@ -97,15 +98,25 @@ function rateArtifact() {
 
     const selectedSet = document.getElementById("set").value;
 
+    let setFound = false;
+
     build.sets.forEach(set => {
 
         if (set.name === selectedSet) {
 
-            score += set.score * 0.3;
+            score += set.score;
+            setFound = true;
 
         }
 
     });
+
+    // OPTIONAL:
+    // Uncomment this if you ONLY want to show characters
+    // that actually use the selected artifact set.
+
+    // if (!setFound) return;
+
 
     // -----------------------------
     // Main Stat
@@ -131,17 +142,24 @@ function rateArtifact() {
 
     }
 
+
     const priorities = build.mainStats[slot.value];
 
-    if (priorities) {
+    if (!priorities) return;
 
-        const index = priorities.indexOf(selectedMain);
+    const index = priorities.indexOf(selectedMain);
 
-        if (index === 0) score += 20;
-        else if (index === 1) score += 17;
-        else if (index === 2) score += 15;
+    // Skip characters that don't want this main stat
+    if (index === -1) return;
 
-    }
+    if (index === 0)
+        score += 20;
+    else if (index === 1)
+        score += 17;
+    else if (index === 2)
+        score += 15;
+
+
 
     // -----------------------------
     // Substats
@@ -171,35 +189,70 @@ function rateArtifact() {
 
     score = Math.min(Math.round(score), 100);
 
+
+
     let grade = "C";
 
-    if (score >= 150) grade = "SS";
-    else if (score >= 100) grade = "S";
-    else if (score >= 80) grade = "A";
-    else if (score >= 70) grade = "B";
+    if (score >= 90)
+        grade = "SS";
 
-    document.getElementById("result").innerHTML = `
+    else if (score >= 80)
+        grade = "S";
 
-        <div class="resultCard">
+    else if (score >= 70)
+        grade = "A";
 
-            <h3>${build.name}</h3>
+    else if (score >= 60)
+        grade = "B";
 
-            <p>
 
-                Character: ${build.character}
 
-                <br><br>
+    results.push({
 
-                Score: <strong>${score}</strong>
+        character: build.character,
+        build: build.name,
+        score: score,
+        grade: grade
 
-                <br>
+    });
 
-                Grade: <strong>${grade}</strong>
+});
 
-            </p>
 
-        </div>
 
-    `;
+// Highest score first
 
-}
+results.sort((a, b) => b.score - a.score);
+
+
+
+// Show top 10
+
+const top10 = results.slice(0, 10);
+
+
+
+document.getElementById("result").innerHTML =
+top10.map((result, i) => `
+
+<div class="resultCard">
+
+<h3>${i + 1}. ${result.character}</h3>
+
+<p>
+
+${result.build}
+
+<br><br>
+
+Score: <strong>${result.score}/100</strong>
+
+<br>
+
+Grade: <strong>${result.grade}</strong>
+
+</p>
+
+</div>
+
+`).join("");}
