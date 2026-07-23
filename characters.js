@@ -43,7 +43,7 @@ mainStats:{
 flower:["HP"],
 feather:["ATK"],
 sands:["DEF%"],
-goblet:["DEF%","Geo DMG"],
+goblet:["DEF%","Geo DMG Bonus"],
 circlet:["Crit Rate","Crit DMG"],
 },
 
