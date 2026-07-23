@@ -185,9 +185,7 @@ characters.forEach(build => {
 
     });
 
-    score += Math.min(subScore / 10, 40);
-
-    score = Math.min(Math.round(score), 100);
+    score += subScore;
 
 
 
