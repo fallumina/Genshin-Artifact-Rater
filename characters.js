@@ -28,6 +28,35 @@ substats:{
 "Elemental Mastery":8
 }
 },
+{
+character:"Albedo",
+name:"Off-Feild DPS",
+
+sets:[
+{name:"Husk Of Opulant Dreams",score:30},
+{name:"Golden Troupe",score:30},
+{name:"Archaic Petra",score:25},
+{name:"Tenacity of the Millelith",score:20},
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["DEF%"],
+goblet:["DEF%","Geo DMG"],
+circlet:["Crit Rate","Crit DMG"],
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"ATK%":4,
+"DEF%":8,
+"Energy Recharge":6,
+"Elemental Mastery":0
+}
+},
 ];
 
 window.characters = characters;
