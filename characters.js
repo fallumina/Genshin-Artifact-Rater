@@ -10,8 +10,12 @@ const characters = [
         },
         {
             name: "Heart of Depth",
-            score: 85
+            score: 90
         },
+        {
+            name: "Nymph's Dream",
+            score: 85
+        }
     ],
 
     mainStats: {
@@ -40,14 +44,16 @@ const characters = [
     },
 
     substats: {
-      substats: {
-    "HP%": 10,
-    "Crit Rate": 9,
-    "Crit DMG": 9,
-    "Energy Recharge": 5,
-    "HP": 3,
-
-}
+        "Crit Rate": 10,
+        "Crit DMG": 10,
+        "HP%": 9,
+        "Energy Recharge": 5,
+        "Elemental Mastery": 2,
+        "ATK%": 1,
+        "DEF%": 0,
+        "HP": 2,
+        "ATK": 0,
+        "DEF": 0
     }
 }
 ];

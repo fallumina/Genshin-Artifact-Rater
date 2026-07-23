@@ -137,9 +137,9 @@ function rateArtifact() {
 
         const index = priorities.indexOf(selectedMain);
 
-        if (index === 0) score += 20;
-        else if (index === 1) score += 17;
-        else if (index === 2) score += 15;
+        if (index === 0) score += 30;
+        else if (index === 1) score += 25;
+        else if (index === 2) score += 20;
 
     }
 
@@ -177,7 +177,6 @@ function rateArtifact() {
     else if (score >= 80) grade = "S";
     else if (score >= 70) grade = "A";
     else if (score >= 60) grade = "B";
-    else if (score >= 40) grade = "D";
 
     document.getElementById("result").innerHTML = `
 
