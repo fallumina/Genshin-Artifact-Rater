@@ -261,7 +261,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     });
 
-    score += subScore*4;
+    score += subScore*2;
 
 
 
