@@ -261,7 +261,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     });
 
-    score += subScore*8;
+    score += subScore*4;
 
 
 
@@ -278,8 +278,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
     else if (score >= 100)
         grade = "B";
+
     else if (score >= 80)
         grade = "C";
+    else grade = "D";
 
 
 
