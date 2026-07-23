@@ -1,500 +1,206 @@
-// =====================================
+// ==============================
 // Genshin Artifact Rater
-// Script Engine
-// =====================================
+// ==============================
 
+const slot = document.getElementById("slot");
+const mainStat = document.getElementById("mainStat");
+const mainStatBox = document.getElementById("mainStatBox");
 
-// Wait until everything loads
-document.addEventListener("DOMContentLoaded", () => {
+function updateMainStats() {
 
+    mainStat.innerHTML = "";
 
-    const slot = document.getElementById("slot");
-    const mainStat = document.getElementById("mainStat");
-    const mainStatBox = document.getElementById("mainStatBox");
+    if (slot.value === "flower" || slot.value === "feather") {
+        mainStatBox.style.display = "none";
+        return;
+    }
 
+    mainStatBox.style.display = "block";
 
-    // -----------------------------
-    // Main stat dropdown controller
-    // -----------------------------
+    let stats = [];
 
+    if (slot.value === "sands") {
 
-    function updateMainStats(){
-
-
-        let stats = [];
-
-
-        if(slot.value === "flower"){
-
-            mainStatBox.style.display = "none";
-            return;
-
-        }
-
-
-        if(slot.value === "feather"){
-
-            mainStatBox.style.display = "none";
-            return;
-
-        }
-
-
-        mainStatBox.style.display = "block";
-
-
-
-        if(slot.value === "sands"){
-
-            stats = [
-                "HP%",
-                "ATK%",
-                "DEF%",
-                "Energy Recharge",
-                "Elemental Mastery"
-            ];
-
-        }
-
-
-
-        if(slot.value === "goblet"){
-
-            stats = [
-
-                "HP%",
-                "ATK%",
-                "DEF%",
-                "Elemental Mastery",
-
-                "Pyro DMG Bonus",
-                "Hydro DMG Bonus",
-                "Electro DMG Bonus",
-                "Cryo DMG Bonus",
-                "Anemo DMG Bonus",
-                "Geo DMG Bonus",
-                "Dendro DMG Bonus",
-                "Physical DMG Bonus"
-
-            ];
-
-        }
-
-
-
-        if(slot.value === "circlet"){
-
-            stats = [
-
-                "Crit Rate",
-                "Crit DMG",
-                "Healing Bonus",
-                "HP%",
-                "ATK%",
-                "DEF%",
-                "Elemental Mastery"
-
-            ];
-
-        }
-
-
-
-        mainStat.innerHTML = "";
-
-
-        stats.forEach(stat => {
-
-            let option = document.createElement("option");
-
-            option.value = stat;
-            option.textContent = stat;
-
-            mainStat.appendChild(option);
-
-        });
-
+        stats = [
+            "HP%",
+            "ATK%",
+            "DEF%",
+            "Energy Recharge",
+            "Elemental Mastery"
+        ];
 
     }
 
+    if (slot.value === "goblet") {
 
+        stats = [
+            "HP%",
+            "Hydro DMG Bonus",
+            "Pyro DMG Bonus",
+            "Cryo DMG Bonus",
+            "Electro DMG Bonus",
+            "Anemo DMG Bonus",
+            "Geo DMG Bonus",
+            "Dendro DMG Bonus",
+            "Physical DMG Bonus"
+        ];
 
-    slot.addEventListener(
-        "change",
-        updateMainStats
-    );
+    }
 
+    if (slot.value === "circlet") {
 
-    updateMainStats();
+        stats = [
+            "Crit Rate",
+            "Crit DMG",
+            "HP%",
+            "ATK%",
+            "DEF%",
+            "Healing Bonus",
+            "Elemental Mastery"
+        ];
 
+    }
 
+    stats.forEach(stat => {
+
+        let option = document.createElement("option");
+        option.value = stat;
+        option.textContent = stat;
+        mainStat.appendChild(option);
+
+    });
+
+}
+
+slot.addEventListener("change", updateMainStats);
+
+updateMainStats();
+
+function rateArtifact() {
+
+    if (!window.characters) {
+
+        document.getElementById("result").innerHTML =
+        "<h2>Error</h2><p>Character data failed to load.</p>";
+
+        return;
+
+    }
+
+    const build = characters[0];
+
+    let score = 0;
 
     // -----------------------------
-    // Rate artifact button
+    // Artifact Set
     // -----------------------------
 
+    const selectedSet = document.getElementById("set").value;
 
-    window.rateArtifact = function(){
+    build.sets.forEach(set => {
 
+        if (set.name === selectedSet) {
 
+            score += set.score * 0.3;
 
-        if(typeof characters === "undefined"){
+        }
 
-            document.getElementById("result").innerHTML =
-            `
-            <h2>Error</h2>
+    });
+
+    // -----------------------------
+    // Main Stat
+    // -----------------------------
+
+    let selectedMain;
+
+    if (slot.value === "flower") {
+
+        selectedMain = "HP";
+
+    }
+
+    else if (slot.value === "feather") {
+
+        selectedMain = "ATK";
+
+    }
+
+    else {
+
+        selectedMain = mainStat.value;
+
+    }
+
+    const priorities = build.mainStats[slot.value];
+
+    if (priorities) {
+
+        const index = priorities.indexOf(selectedMain);
+
+        if (index === 0) score += 20;
+        else if (index === 1) score += 17;
+        else if (index === 2) score += 15;
+
+    }
+
+    // -----------------------------
+    // Substats
+    // -----------------------------
+
+    const substats = document.querySelectorAll(".substat");
+    const values = document.querySelectorAll(".subValue");
+
+    let subScore = 0;
+
+    substats.forEach((item, i) => {
+
+        const stat = item.value;
+        const value = Number(values[i].value);
+
+        if (!value) return;
+
+        if (build.substats[stat]) {
+
+            subScore += build.substats[stat] * value;
+
+        }
+
+    });
+
+    score += Math.min(subScore / 10, 40);
+
+    score = Math.min(Math.round(score), 100);
+
+    let grade = "C";
+
+    if (score >= 90) grade = "SSS";
+    else if (score >= 80) grade = "S";
+    else if (score >= 70) grade = "A";
+    else if (score >= 60) grade = "B";
+    else if (score >= 40) grade = "D";
+
+    document.getElementById("result").innerHTML = `
+
+        <div class="resultCard">
+
+            <h3>${build.name}</h3>
+
             <p>
-            Character database failed to load.
+
+                Character: ${build.character}
+
+                <br><br>
+
+                Score: <strong>${score}/100</strong>
+
+                <br>
+
+                Grade: <strong>${grade}</strong>
+
             </p>
-            `;
 
-            return;
+        </div>
 
-        }
+    `;
 
-
-
-        let results = [];
-
-
-
-        let selectedSet =
-        document.getElementById("set").value;
-
-
-
-        let selectedMain;
-
-
-
-        if(slot.value === "flower"){
-
-            selectedMain = "HP";
-
-        }
-
-        else if(slot.value === "feather"){
-
-            selectedMain = "ATK";
-
-        }
-
-        else {
-
-            selectedMain = mainStat.value;
-
-        }
-
-
-
-
-        let substats =
-        document.querySelectorAll(".substat");
-
-
-        let subValues =
-        document.querySelectorAll(".subValue");
-
-
-
-
-
-        // Check every build
-
-
-        characters.forEach(build => {
-
-
-
-            let score = 0;
-
-
-
-            // -------------------------
-            // Artifact Set Score
-            // -------------------------
-
-
-            if(build.sets){
-
-
-                let set =
-                build.sets.find(
-                    s => s.name === selectedSet
-                );
-
-
-                if(set){
-
-                    score +=
-                    set.score * 0.30;
-
-                }
-
-
-            }
-
-
-
-
-
-            // -------------------------
-            // Main Stat Score
-            // -------------------------
-
-
-            if(build.mainStats){
-
-
-                let possible =
-                build.mainStats[slot.value];
-
-
-
-                if(possible){
-
-
-                    let index =
-                    possible.indexOf(selectedMain);
-
-
-
-                    if(index === 0){
-
-                        score += 30;
-
-                    }
-
-                    else if(index === 1){
-
-                        score += 25;
-
-                    }
-
-                    else if(index === 2){
-
-                        score += 20;
-
-                    }
-
-                    else if(index > -1){
-
-                        score += 10;
-
-                    }
-
-
-                }
-
-            }
-
-
-
-
-
-
-
-            // -------------------------
-            // Substat Score
-            // -------------------------
-
-
-            let subScore = 0;
-
-
-
-            substats.forEach((item,index)=>{
-
-
-                let stat =
-                item.value;
-
-
-
-                let value =
-                Number(subValues[index].value) || 0;
-
-
-
-                if(
-                    build.substats &&
-                    build.substats[stat]
-                ){
-
-
-                    subScore +=
-                    build.substats[stat] *
-                    value;
-
-
-                }
-
-
-            });
-
-
-
-
-
-            // Convert substats to points
-
-            if(subScore >= 150){
-
-                score += 40;
-
-            }
-
-            else if(subScore >= 100){
-
-                score += 30;
-
-            }
-
-            else if(subScore >= 50){
-
-                score += 20;
-
-            }
-
-            else {
-
-                score += subScore / 5;
-
-            }
-
-
-
-
-
-            if(score > 100){
-
-                score = 100;
-
-            }
-
-
-
-            results.push({
-
-                name: build.name,
-
-                character: build.character,
-
-                score: Math.round(score)
-
-            });
-
-
-
-        });
-
-
-
-
-
-
-
-        // Sort highest first
-
-        results.sort(
-            (a,b)=>b.score-a.score
-        );
-
-
-
-        displayResults(
-            results.slice(0,10)
-        );
-
-
-    };
-
-
-
-
-
-    // -----------------------------
-    // Display leaderboard
-    // -----------------------------
-
-
-    function displayResults(results){
-
-
-        let html =
-        "<h2>Top Characters</h2>";
-
-
-
-        results.forEach((result,index)=>{
-
-
-            let grade;
-
-
-
-            if(result.score >= 90){
-
-                grade = "SSS";
-
-            }
-
-            else if(result.score >= 80){
-
-                grade = "S";
-
-            }
-
-            else if(result.score >= 70){
-
-                grade = "A";
-
-            }
-
-            else if(result.score >= 60){
-
-                grade = "B";
-
-            }
-
-            else {
-
-                grade = "C";
-
-            }
-
-
-
-            html += `
-
-            <div class="resultCard">
-
-                <h3>
-                ${index + 1}. ${result.name}
-                </h3>
-
-                <p>
-                ${result.character}
-                <br>
-                Score: ${result.score}/100
-                <br>
-                Rank: ${grade}
-                </p>
-
-            </div>
-
-            `;
-
-
-        });
-
-
-
-        document.getElementById("result").innerHTML = html;
-
-
-    }
-
-
-
-});
+}
