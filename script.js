@@ -34,6 +34,8 @@ function updateMainStats() {
 
         stats = [
             "HP%",
+            "DEF%",
+            "Elemental Mastery",
             "Hydro DMG Bonus",
             "Pyro DMG Bonus",
             "Cryo DMG Bonus",
@@ -231,9 +233,9 @@ window.addEventListener("DOMContentLoaded", () => {
     if (index === 0)
         score += 20;
     else if (index === 1)
-        score += 17;
+        score +=20;
     else if (index === 2)
-        score += 15;
+        score += 20;
 
 
 
