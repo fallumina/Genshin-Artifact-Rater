@@ -19,7 +19,7 @@ circlet:["Elemental Mastery","Crit Rate"]
 },
 
 substats:{
-"Crit Rate":3,
+"Crit Rate":6,
 "Crit DMG":0,
 "HP%":0,
 "ATK%":0,
