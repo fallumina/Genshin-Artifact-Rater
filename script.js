@@ -77,10 +77,9 @@ updateMainStats();
 
 const setMenu = document.getElementById("set");
 
-
 artifactSets.forEach(set => {
 
-    let option = document.createElement("option");
+    const option = document.createElement("option");
 
     option.value = set;
     option.textContent = set;
@@ -88,6 +87,7 @@ artifactSets.forEach(set => {
     setMenu.appendChild(option);
 
 });
+
 const artifactSets = [
 
 "A Day Carved From Rising Winds",
