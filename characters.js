@@ -22,8 +22,11 @@ substats:{
 "Crit Rate":6,
 "Crit DMG":0,
 "HP%":0,
+"HP":0,
 "ATK%":0,
+"ATK":0,
 "DEF%":0,
+"DEF":0,
 "Energy Recharge":10,
 "Elemental Mastery":8
 }
@@ -51,8 +54,11 @@ substats:{
 "Crit Rate":10,
 "Crit DMG":10,
 "HP%":0,
+"HP":0,
 "ATK%":4,
+"ATK":0,
 "DEF%":8,
+"DEF":0,
 "Energy Recharge":6,
 "Elemental Mastery":0
 }
