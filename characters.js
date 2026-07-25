@@ -63,6 +63,7 @@ substats:{
 "Elemental Mastery":0
 }
 },
+
 {
 character:"Alhaitham",
 name:"Spread DPS",
@@ -83,9 +84,12 @@ circlet:["Crit Rate","Crit DMG"]
 substats:{
 "Crit Rate":10,
 "Crit DMG":10,
-"HP%":0
+"HP%":0,
+"HP":0,
 "ATK%":6,
+"ATK":0,
 "DEF%":0,
+"DEF":0,
 "Energy Recharge":8,
 "Elemental Mastery":8
 }
@@ -114,8 +118,11 @@ substats:{
 "Crit Rate":10,
 "Crit DMG":10,
 "HP%":0,
+"HP":0,
 "ATK%":8,
+"ATK":0,
 "DEF%":0,
+"DEF":0,
 "Energy Recharge":4,
 "Elemental Mastery":6
 }
@@ -142,13 +149,15 @@ substats:{
 "Crit Rate":8,
 "Crit DMG":8,
 "HP%":0,
+"HP":0,
 "ATK%":6,
+"ATK":0,
 "DEF%":0,
+"DEF":0,
 "Energy Recharge":10,
 "Elemental Mastery":4
 }
 },
-
 
 {
 character:"Traveler",
@@ -169,9 +178,11 @@ circlet:["Elemental Mastery","Crit Rate","Crit DMG"]
 substats:{
 "Crit Rate":4,
 "Crit DMG":4,
-"HP%":0,
+"HP":0,
 "ATK%":6,
+"ATK":0,
 "DEF%":0,
+"DEF":0,
 "Energy Recharge":8,
 "Elemental Mastery":10
 }
@@ -200,8 +211,11 @@ substats:{
 "Crit Rate":10,
 "Crit DMG":10,
 "HP%":0,
+"HP":0,
 "ATK%":6,
+"ATK":0,
 "DEF%":8,
+"DEF":0,
 "Energy Recharge":6,
 "Elemental Mastery":0
 }
@@ -230,8 +244,11 @@ substats:{
 "Crit Rate":10,
 "Crit DMG":10,
 "HP%":0,
+"HP":0,
 "ATK%":6,
+"ATK":0
 "DEF%":0,
+"DEF":0,
 "Energy Recharge":0,
 "Elemental Mastery":8
 }
@@ -262,8 +279,11 @@ substats:{
 "Crit Rate":4,
 "Crit DMG":0,
 "HP%":8,
+"HP":0,
 "ATK%":0,
+"ATK":0,
 "DEF%":0,
+"DEF":0,
 "Energy Recharge":10,
 "Elemental Mastery":0
 }
