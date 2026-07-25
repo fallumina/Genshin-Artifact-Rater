@@ -895,7 +895,7 @@ flower:["HP"],
 feather:["ATK"],
 sands:["Energy Recharge","ATK%","Elemental Mastery"],
 goblet:["Dendro DMG Bonus","Elemental Mastery"],
-circlet:["Crit Rate","Crit DMG","Elemental Mastery”]
+circlet:["Crit Rate","Crit DMG","Elemental Mastery"]
 },
 
 substats:{
@@ -992,7 +992,7 @@ flower:["HP"],
 feather:["ATK"],
 sands:["Energy Recharge","HP%","Elemental Mastery"],
 goblet:["HP%","Elemental Mastery"],
-circlet:["Healing Bonus","HP%","Elemental Mastery","Crit Rate”]
+circlet:["Healing Bonus","HP%","Elemental Mastery","Crit Rate"]
 },
 
 substats:{
