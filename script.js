@@ -135,204 +135,185 @@ function rateArtifact() {
         return;
 
     }
-const results = [];
 
-characters.forEach(build => {
 
-    let score = 0;
-window.addEventListener("DOMContentLoaded", () => {
-
-    const setMenu = document.getElementById("set");
-
-    artifactSets.forEach(set => {
-
-        const option = document.createElement("option");
-
-        option.value = set;
-        option.textContent = set;
-
-        setMenu.appendChild(option);
-
-    });
-
-});
-
-    // -----------------------------
-    // Artifact Set
-    // -----------------------------
+    const results = [];
 
     const selectedSet = document.getElementById("set").value;
 
-    let setFound = false;
 
-    build.sets.forEach(set => {
+    characters.forEach(build => {
 
-        if (set.name === selectedSet) {
 
-            score += set.score;
-            setFound = true;
+        let score = 0;
+
+
+        // Artifact set
+
+        build.sets.forEach(set => {
+
+            if (set.name === selectedSet) {
+
+                score += set.score;
+
+            }
+
+        });
+
+
+
+        // Main stat
+
+        let selectedMain;
+
+
+        if (slot.value === "flower") {
+
+            selectedMain = "HP";
+
+        }
+
+        else if (slot.value === "feather") {
+
+            selectedMain = "ATK";
+
+        }
+
+        else {
+
+            selectedMain = mainStat.value;
 
         }
 
 
-const setMenu = document.getElementById("set");
 
-artifactSets.forEach(set => {
-
-    const option = document.createElement("option");
-
-    option.value = set;
-    option.textContent = set;
-
-    setMenu.appendChild(option);
-
-});
-
-    // OPTIONAL:
-    // Uncomment this if you ONLY want to show characters
-    // that actually use the selected artifact set.
-
-    // if (!setFound) return;
+        const priorities = build.mainStats[slot.value];
 
 
-    // -----------------------------
-    // Main Stat
-    // -----------------------------
-
-    let selectedMain;
-
-    if (slot.value === "flower") {
-
-        selectedMain = "HP";
-
-    }
-
-    else if (slot.value === "feather") {
-
-        selectedMain = "ATK";
-
-    }
-
-    else {
-
-        selectedMain = mainStat.value;
-
-    }
+        if (!priorities) return;
 
 
-    const priorities = build.mainStats[slot.value];
+        const index = priorities.indexOf(selectedMain);
 
-    if (!priorities) return;
 
-    const index = priorities.indexOf(selectedMain);
-
-    // Skip characters that don't want this main stat
-    if (index === -1) return;
-
-    if (index === 0)
-        score += 20;
-    else if (index === 1)
-        score +=20;
-    else if (index === 2)
-        score += 20;
+        if (index === -1) return;
 
 
 
-    // -----------------------------
-    // Substats
-    // -----------------------------
+        if (index === 0)
+            score += 20;
 
-    const substats = document.querySelectorAll(".substat");
-    const values = document.querySelectorAll(".subValue");
+        else if (index === 1)
+            score += 15;
 
-    let subScore = 0;
+        else if (index === 2)
+            score += 10;
 
-    substats.forEach((item, i) => {
 
-        const stat = item.value;
-        const value = Number(values[i].value);
 
-        if (!value) return;
+        // Substats
 
-        if (build.substats[stat]) {
+        const substats = document.querySelectorAll(".substat");
+        const values = document.querySelectorAll(".subValue");
 
-            subScore += build.substats[stat] * value;
 
-        }
+        let subScore = 0;
+
+
+        substats.forEach((item, i) => {
+
+
+            const stat = item.value;
+            const value = Number(values[i].value);
+
+
+            if (!value) return;
+
+
+            if (build.substats[stat]) {
+
+                subScore += build.substats[stat] * value;
+
+            }
+
+
+        });
+
+
+        score += subScore * 2;
+
+
+
+        // Grade
+
+        let grade = "D";
+
+
+        if (score >= 175)
+            grade = "SS";
+
+        else if (score >= 150)
+            grade = "S";
+
+        else if (score >= 120)
+            grade = "A";
+
+        else if (score >= 100)
+            grade = "B";
+
+        else if (score >= 80)
+            grade = "C";
+
+
+
+        results.push({
+
+            character: build.character,
+            build: build.name,
+            score: Math.round(score),
+            grade: grade
+
+        });
+
 
     });
 
-    score += subScore*2;
+
+
+    results.sort((a,b)=>b.score-a.score);
 
 
 
-    let grade = "D";
-
-    if (score >= 175)
-        grade = "SS";
-
-    else if (score >= 150)
-        grade = "S";
-
-    else if (score >= 120)
-        grade = "A";
-
-    else if (score >= 100)
-        grade = "B";
-
-    else if (score >= 80)
-        grade = "C";
-    else grade = "D";
+    const top10 = results.slice(0,10);
 
 
 
-    results.push({
+    document.getElementById("result").innerHTML =
 
-        character: build.character,
-        build: build.name,
-        score: score,
-        grade: grade
+    top10.map((result,i)=>`
 
-    });
+    <div class="resultCard">
 
-});
+    <h3>${i+1}. ${result.character}</h3>
 
+    <p>
 
+    ${result.build}
 
-// Highest score first
+    <br><br>
 
-results.sort((a, b) => b.score - a.score);
+    Score:
+    <strong>${result.score}</strong>
 
+    <br>
 
+    Grade:
+    <strong>${result.grade}</strong>
 
-// Show top 10
+    </p>
 
-const top10 = results.slice(0, 10);
+    </div>
 
+    `).join("");
 
-
-document.getElementById("result").innerHTML =
-top10.map((result, i) =>`
-
-<div class="resultCard">
-
-<h3>${i + 1}. ${result.character}</h3>
-
-<p>
-
-${result.build}
-
-<br><br>
-
-Score: <strong>${result.score}</strong>
-
-<br>
-
-Grade: <strong>${result.grade}</strong>
-
-</p>
-
-</div>
-
-`).join("");
 }
