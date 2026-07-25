@@ -253,7 +253,7 @@ sets:[
 mainStats:{
 flower:["HP"],
 feather:["ATK"],
-sands:["HP%”,"Energy Recharge"],
+sands:["HP%","Energy Recharge"],
 goblet:["HP%"],
 circlet:["HP%","Healing Bonus"]
 },
@@ -283,19 +283,19 @@ mainStats:{
 flower:["HP"],
 feather:["ATK"],
 sands:["HP%"],
-goblet:["HP%”],
-circlet:["Healing Bonus”]
+goblet:["HP%"],
+circlet:["Healing Bonus"]
 },
 
 substats:{
 "Crit Rate":0,
 "Crit DMG":0,
 "HP%":10,
-“HP”:10,
+"HP":10,
 "ATK%":0,
-“ATK”:0,
+"ATK":0,
 "DEF%":0,
-“DEF”:0,
+"DEF":0,
 "Energy Recharge":0,
 "Elemental Mastery":0
 }
@@ -315,7 +315,7 @@ sets:[
 mainStats:{
 flower:["HP"],
 feather:["ATK"],
-sands:["ATK%","Energy Recharge”],
+sands:["ATK%","Energy Recharge"],
 goblet:["Electro DMG Bonus"],
 circlet:["Crit Rate","Crit DMG"]
 },
@@ -324,11 +324,11 @@ substats:{
 "Crit Rate":10,
 "Crit DMG":10,
 "HP%":0,
-“HP”:0,
+"HP":0,
 "ATK%":8,
-“ATK”:0,
+"ATK":0,
 "DEF%":0,
-“DEF”:0,
+"DEF":0,
 "Energy Recharge":6,
 "Elemental Mastery":6
 }
@@ -336,7 +336,7 @@ substats:{
 
 
 {
-character:"Bennett”,
+character:"Bennett",
 name:"Support",
 
 sets:[
@@ -348,20 +348,20 @@ sets:[
 mainStats:{
 flower:["HP"],
 feather:["ATK"],
-sands:["Energy Recharge”,"ATK%”,”HP%”],
-goblet:["Pyro DMG Bonus”,"HP%"],
-circlet:["Crit Rate","Crit DMG”, “HP%”, “Healing Bonus”]
+sands:["Energy Recharge","ATK%","HP%"],
+goblet:["Pyro DMG Bonus","HP%"],
+circlet:["Crit Rate","Crit DMG", "HP%","Healing Bonus"]
 },
 
 substats:{
 "Crit Rate":8,
 "Crit DMG":8,
 "HP%":8,
-“HP”:6,
+"HP":6,
 "ATK%":6,
-“ATK”:0,
+"ATK":0,
 "DEF%":0,
-“DEF”:0,
+"DEF":0,
 "Energy Recharge":10,
 "Elemental Mastery"0
 }
