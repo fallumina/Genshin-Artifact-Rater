@@ -1203,6 +1203,434 @@ substats:{
 "Elemental Mastery":0
 }
 },
+{
+character:"Faruzan",
+name:"Buff Support",
+
+sets:[
+{name:"Scroll of the Hero of Cinder City",score:30},
+{name:"Noblesse Oblige",score:30},
+{name:"Viridescent Venerer",score:25},
+{name:"Emblem of Severed Fate",score:20}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["Energy Recharge"],
+goblet:["Anemo DMG Bonus"],
+circlet:["Crit Rate","Crit DMG"]
+},
+
+substats:{
+"Crit Rate":8,
+"Crit DMG":6,
+"HP%":0,
+"HP":0,
+"ATK%":4,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":10,
+"Elemental Mastery":0
+}
+},
+
+{
+character:"Fischl",
+name:"Off-Field Aggravate DPS",
+
+sets:[
+{name:"Golden Troupe",score:30},
+{name:"A Day Carved From Rising Winds",score:25},
+{name:"Gilded Dreams",score:20},
+{name:"Thundering Fury",score:20},
+{name:"Thundersoother",score:15}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["ATK%","Elemental Mastery"],
+goblet:["Electro DMG Bonus"],
+circlet:["Crit Rate","Crit DMG"]
+},
+
+substats:{
+"Crit Rate":8,
+"Crit DMG":8,
+"HP%":0,
+"HP":0,
+"ATK%":6,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":10,
+"Elemental Mastery":6
+}
+},
+
+{
+character:"Fischl",
+name:"Off-Field DPS",
+
+sets:[
+{name:"Golden Troupe",score:30},
+{name:"A Day Carved From Rising Winds",score:25},
+{name:"Thundersoother",score:20},
+{name:"Tenacity of the Millelith",score:15}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["ATK%"],
+goblet:["Electro DMG Bonus"],
+circlet:["Crit Rate","Crit DMG"]
+},
+
+substats:{
+"Crit Rate":8,
+"Crit DMG":8,
+"HP%":0,
+"HP":0,
+"ATK%":6,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":10,
+"Elemental Mastery":4
+}
+},
+
+
+{
+character:"Flins",
+name:"DPS",
+
+sets:[
+{name:"Night of the Sky's Unveiling",score:30},
+{name:"Gilded Dreams",score:25}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["ATK%"],
+goblet:["ATK%"],
+circlet:["Crit DMG","Crit Rate"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"HP":0,
+"ATK%":8,
+"ATK":4,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":6,
+"Elemental Mastery":4
+}
+},
+
+{
+character:"Freminet",
+name:"Cryo DPS",
+
+sets:[
+{name:"Blizzard Strayer",score:30},
+{name:"Golden Troupe",score:25},
+{name:"Marechaussee Hunter",score:20}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["ATK%"],
+goblet:["Cryo DMG Bonus"],
+circlet:["Crit Rate","Crit DMG"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"HP":0,
+"ATK%":8,
+"ATK":4,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":8,
+"Elemental Mastery":4
+}
+},
+
+{
+character:"Freminet",
+name:"Physical DPS",
+
+sets:[
+{name:"Pale Flame",score:30},
+{name:"Golden Troupe",score:25},
+{name:"Gladiator's Finale",score:20},
+{name:"Marechaussee Hunter",score:15}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["ATK%"],
+goblet:["Physical DMG"],
+circlet:["Crit Rate","Crit DMG"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"HP":0,
+"ATK%":8,
+"ATK":4,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":8,
+"Elemental Mastery":0
+}
+},
+
+
+{
+character:"Furina",
+name:"Off-Field DPS & Buff Support",
+
+sets:[
+{name:"Golden Troupe",score:30},
+{name:"Tenacity of the Millelith",score:25}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["Energy Recharge","HP%"],
+goblet:["HP%","Hydro DMG Bonus"],
+circlet:["Crit Rate","Crit DMG"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":10,
+"HP":8,
+"ATK%":0,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":8,
+"Elemental Mastery":0
+}
+},
+
+{
+character:"Gaming",
+name:"DPS",
+
+sets:[
+{name:"Crimson Witch of Flames",score:30},
+{name:"Marechaussee Hunter",score:25},
+{name:"Long Night's Oath",score:25},
+{name:"Gilded Dreams",score:20}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["Elemental Mastery","ATK%","Energy Recharge"],
+goblet:["Pyro DMG Bonus"],
+circlet:["Crit Rate","Crit DMG"]
+},
+
+substats:{
+"Crit Rate":8,
+"Crit DMG":8,
+"HP%":0,
+"HP":0,
+"ATK%":4,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":10,
+"Elemental Mastery":6
+}
+},
+
+
+{
+character:"Ganyu",
+name:"Freeze DPS",
+
+sets:[
+{name:"Blizzard Strayer",score:30},
+{name:"Marechaussee Hunter",score:25}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["ATK%"],
+goblet:["Cryo DMG Bonus"],
+circlet:["Crit DMG"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"HP":0,
+"ATK%":8,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":6,
+"Elemental Mastery":0
+}
+},
+
+
+{
+character:"Ganyu",
+name:"Cryo DPS",
+
+sets:[
+{name:"Blizzard Strayer",score:30}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["ATK%"],
+goblet:["Cryo DMG Bonus"],
+circlet:["Crit DMG","Crit Rate"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"HP":0,
+"ATK%":8,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":6,
+"Elemental Mastery":0
+}
+},
+
+
+{
+character:"Ganyu",
+name:"Melt DPS",
+
+sets:[
+{name:"Wanderer's Troupe",score:30},
+{name:"Shimenawa's Reminiscence",score:25},
+{name:"Gilded Dreams",score:20},
+{name:"Unfinished Reverie",score:15}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["Elemental Mastery","ATK%"],
+goblet:["Cryo DMG Bonus"],
+circlet:["Crit Rate","Crit DMG"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"HP":0,
+"ATK%":8,
+"ATK":4,
+"DEF%":,
+"DEF":0,
+"Energy Recharge":0,
+"Elemental Mastery":8
+}
+},
+
+
+{
+character:"Traveler",
+name:"Geo DPS",
+
+sets:[
+{name:"Nighttime Whispers in the Echoing Woods",score:30},
+{name:"Golden Troupe",score:30},
+{name:"Emblem of Severed Fate",score:25},
+{name:"Archaic Petra",score:20},
+{name:"Noblesse Oblige",score:15}
+{name:"Scroll of the Hero of Cinder City",score:15}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["ATK%"],
+goblet:["Geo DMG Bonus"],
+circlet:["Crit Rate","Crit DMG"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"HP":0,
+"ATK%":8,
+"ATK":4,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":6,
+"Elemental Mastery":0
+}
+},
+
+
+{
+character:"Gorou",
+name:"Buff Support",
+
+sets:[
+{name:"Noblesse Oblige",score:30},
+{name:"Scroll of the Hero of Cinder City",score:30},
+{name:"Silken Moon's Serenade",score:25}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["Energy Recharge"],
+goblet:["Geo DMG Bonus","DEF%"],
+circlet:["Crit Rate","DEF%","Healing Bonus"]
+},
+
+substats:{
+"Crit Rate":6,
+"Crit DMG":0,
+"HP%":0,
+"HP":0,
+"ATK%":0,
+"ATK":0,
+"DEF%":8,
+"DEF":4,
+"Energy Recharge":10,
+"Elemental Mastery":0
+}
+},
+
 
 
 ];
