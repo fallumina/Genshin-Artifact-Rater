@@ -161,9 +161,9 @@ sets:[
 mainStats:{
 flower:["HP"],
 feather:["ATK"],
-sands:["Elemental Mastery","ATK%", “Energy Recharge”],
+sands:["Elemental Mastery","ATK%", "Energy Recharge"],
 goblet:["Elemental Mastery","Anemo DMG Bonus"],
-circlet:["Elemental Mastery","Crit Rate",”Crit DMG”]
+circlet:["Elemental Mastery","Crit Rate","Crit DMG"]
 },
 
 substats:{
