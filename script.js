@@ -334,4 +334,5 @@ Grade: <strong>${result.grade}</strong>
 
 </div>
 
-`).join("");}
+`).join("");
+}
