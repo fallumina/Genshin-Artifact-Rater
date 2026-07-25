@@ -1076,6 +1076,134 @@ substats:{
 }
 },
 
+{
+character:"Traveler",
+name:"Electro - Energy Support",
+
+sets:[
+{name:"Noblesse Oblige",score:30},
+{name:"Scroll of the Hero of Cinder City",score:25},
+{name:"Emblem of Severed Fate",score:20}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["Energy Recharge"],
+goblet:["Electro DMG Bonus"],
+circlet:["Crit Rate","Crit DMG"]
+},
+
+substats:{
+"Crit Rate":6,
+"Crit DMG":6,
+"HP%":0,
+"HP":0,
+"ATK%":8,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":10,
+"Elemental Mastery":0
+}
+},
+
+{
+character:"Emilie",
+name:"Off-Field DPS",
+
+sets:[
+{name:"Unfinished Reverie",score:30},
+{name:"Deepwood Memories",score:25},
+{name:"Golden Troupe",score:20}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["ATK%"],
+goblet:["Dendro DMG Bonus"],
+circlet:["Crit Rate","Crit DMG"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"HP":0,
+"ATK%":8,
+"ATK":4,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":6,
+"Elemental Mastery":0
+}
+},
+
+{
+character:"Escoffier",
+name:"Off-Field DPS",
+
+sets:[
+{name:"Golden Troupe",score:30},
+{name:"Blizzard Strayer",score:25},
+{name:"Tenacity of the Millelith",score:20},
+{name:"Scroll of the Hero of Cinder City",score:15}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["ATK%","Energy Recharge"],
+goblet:["Cryo DMG Bonus","ATK%"],
+circlet:["Crit Rate","Crit DMG"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"HP":0,
+"ATK%":8,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":8,
+"Elemental Mastery":0
+}
+},
+
+{
+character:"Eula",
+name:"DPS",
+
+sets:[
+{name:"Pale Flame",score:30},
+{name:"Gladiator's Finale",score:25}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["ATK%"],
+goblet:["Physical DMG Bonus"],
+circlet:["Crit Rate","Crit DMG"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"HP":0,
+"ATK%":6,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":8,
+"Elemental Mastery":0
+}
+},
+
 
 ];
 
