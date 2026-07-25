@@ -429,8 +429,8 @@ sets:[
 {name:"Ocean-Hued Clam",score:25},
 {name:"Scroll of the Hero of Cinder City",score:25},
 {name:"Song of Days Past",score:25},
-{name:"Maiden Beloved",score:20}
-{name:"Blizzard Strayer",score:15},
+{name:"Maiden Beloved",score:20},
+{name:"Blizzard Strayer",score:15}
 ],
 
 mainStats:{
