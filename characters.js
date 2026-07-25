@@ -818,6 +818,264 @@ substats:{
 }
 },
 
+{
+character:"Dahlia",
+name:"Sheild Support",
+
+sets:[
+{name:"Noblesse Oblige",score:30},
+{name:"Scroll of the Hero of Cinder City",score:25}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["Energy Recharge","HP%"],
+goblet:["HP%"],
+circlet:["HP%"]
+},
+
+substats:{
+"Crit Rate":4,
+"Crit DMG":0,
+"HP%":8,
+"HP":6,
+"ATK%":0,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":10,
+"Elemental Mastery":0
+}
+},
+
+{
+character:"Dehya",
+name:"Support",
+
+sets:[
+{name:"Tenacity of the Millelith",score:30},
+{name:"Scroll of the Hero of Cinder City",score:25}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["HP%"],
+goblet:["HP%"],
+circlet:["HP%","Crit Rate"]
+},
+
+substats:{
+"Crit Rate":6,
+"Crit DMG":0,
+"HP%":10,
+"HP":8,
+"ATK%":0,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":4,
+"Elemental Mastery":0
+}
+},
+
+{
+character:"Traveler",
+name:"Dendro Reaction Support",
+
+sets:[
+{name:"Deepwood Memories",score:30},
+{name:"Noblesse Oblige",score:25},
+{name:"Gilded Dreams",score:20}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["Energy Recharge","ATK%","Elemental Mastery"],
+goblet:["Dendro DMG Bonus","Elemental Mastery"],
+circlet:["Crit Rate","Crit DMG","Elemental Mastery”]
+},
+
+substats:{
+"Crit Rate":8,
+"Crit DMG":8,
+"HP%":0,
+"HP":0,
+"ATK%":6,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":10,
+"Elemental Mastery":6
+}
+},
+
+{
+character:"Diluc",
+name:"DPS",
+
+sets:[
+{name:"Crimson Witch of Flames",score:30},
+{name:"Gilded Dreams",score:25},
+{name:"Gladiators Finale",score:20}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["Elemental Mastery","ATK%"],
+goblet:["Pyro DMG"],
+circlet:["Crit Rate","Crit DMG"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"HP":0,
+"ATK%":8,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":4,
+"Elemental Mastery":6
+}
+},
+
+{
+character:"Diona",
+name:"Heal & Shield Support",
+
+sets:[
+{name:"Noblesse Oblige",score:30},
+{name:"Scroll of the Hero of Cinder City",score:30},
+{name:"Maiden Beloved",score:25},
+{name:"Ocean-Hued Clam",score:25},
+{name:"Tenacity of the Millelith",score:20}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["Energy Recharge","HP%"],
+goblet:["HP%"],
+circlet:["HP%","Healing Bonus"]
+},
+
+substats:{
+"Crit Rate":4,
+"Crit DMG":0,
+"HP%":10,
+"HP":6,
+"ATK%":0,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":8,
+"Elemental Mastery":0
+}
+},
+
+{
+character:"Dori",
+name:"Heal Support",
+
+sets:[
+{name:"Noblesse Oblige",score:30},
+{name:"Deepwood Memories",score:25}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["Energy Recharge","HP%","Elemental Mastery"],
+goblet:["HP%","Elemental Mastery"],
+circlet:["Healing Bonus","HP%","Elemental Mastery","Crit Rate”]
+},
+
+substats:{
+"Crit Rate":4,
+"Crit DMG":0,
+"HP%":8,
+"HP":0,
+"ATK%":0,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":10,
+"Elemental Mastery":6
+}
+},
+
+{
+character:"Durin",
+name:"Buff Support & Off Field DPS",
+
+sets:[
+{name:"A Day Carved From Rising Winds",score:30},
+{name:"Celestial Gift",score:30},
+{name:"Noblesse Oblige",score:25},
+{name:"Embem of Severed Fate",score:20},
+{name:"Scroll of the Hero of Cinder City",score:25}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["ATK%"],
+goblet:["Pyro Dmg Bonus","ATK%"],
+circlet:["Crit DMG","Crit Rate"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"HP":0,
+"ATK%":8,
+"ATK":4,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":6,
+"Elemental Mastery":0
+}
+},
+
+{
+character:"Durin",
+name:"Vaporize/Melt Off-Field DPS",
+
+sets:[
+{name:"A Day Carved From Rising Winds",score:30},
+{name:"Gilded Dreams",score:25},
+{name:"Emblem of Severed Fate",score:25},
+{name:"Crimson Witch of Flames",score:15}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["ATK%"],
+goblet:["Pyro Dmg Bonus","ATK%"],
+circlet:["Crit Rate","Crit DMG"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"HP":0,
+"ATK%":8,
+"ATK":4,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":6,
+"Elemental Mastery":8
+}
+},
+
 
 ];
 
