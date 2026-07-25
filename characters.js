@@ -246,7 +246,7 @@ substats:{
 "HP%":0,
 "HP":0,
 "ATK%":6,
-"ATK":0
+"ATK":0,
 "DEF%":0,
 "DEF":0,
 "Energy Recharge":0,

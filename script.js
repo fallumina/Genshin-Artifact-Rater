@@ -77,19 +77,6 @@ slot.addEventListener("change", updateMainStats);
 
 updateMainStats();
 
-const setMenu = document.getElementById("set");
-
-artifactSets.forEach(set => {
-
-    const option = document.createElement("option");
-
-    option.value = set;
-    option.textContent = set;
-
-    setMenu.appendChild(option);
-
-});
-
 const artifactSets = [
 
 "A Day Carved From Rising Winds",
@@ -187,7 +174,19 @@ window.addEventListener("DOMContentLoaded", () => {
 
         }
 
-    });
+
+const setMenu = document.getElementById("set");
+
+artifactSets.forEach(set => {
+
+    const option = document.createElement("option");
+
+    option.value = set;
+    option.textContent = set;
+
+    setMenu.appendChild(option);
+
+});
 
     // OPTIONAL:
     // Uncomment this if you ONLY want to show characters
