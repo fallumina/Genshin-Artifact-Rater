@@ -312,7 +312,7 @@ const top10 = results.slice(0, 10);
 
 
 document.getElementById("result").innerHTML =
-top10.map((result, i) => `
+top10.map((result, i) =>`
 
 <div class="resultCard">
 
