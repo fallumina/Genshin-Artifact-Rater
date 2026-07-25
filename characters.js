@@ -6,7 +6,7 @@ name:"Reaction Support",
 sets:[
 {name:"Silken Moon's Serenade",score:30},
 {name:"Noblesse Oblige",score:25},
-{name:"Scroll of the Hero od Cinder City",score:20},
+{name:"Scroll of the Hero of Cinder City",score:25},
 {name:"Deepwood Memories",score:15}
 ],
 
@@ -101,7 +101,7 @@ name:"Burst Support",
 
 sets:[
 {name:"Blizzard Strayer",score:30},
-{name:"Emblem of  Severed Fate",score:25},
+{name:"Emblem of Severed Fate",score:25},
 {name:"Noblesse Oblige",score:20},
 {name:"Scroll of the Hero of Cinder City",score:15}
 ],
@@ -195,7 +195,7 @@ name:"DPS",
 
 sets:[
 {name:"Husk of Opulent Dreams",score:30},
-{name:"Desert Pavillion Chronicle",score:25},
+{name:"Desert Pavilion Chronicle",score:25},
 {name:"Retracting Bolide",score:20}
 ],
 
@@ -383,7 +383,7 @@ substats:{
 "DEF%":0,
 "DEF":0,
 "Energy Recharge":10,
-"Elemental Mastery"0
+"Elemental Mastery":0
 }
 },
 
