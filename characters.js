@@ -1555,7 +1555,7 @@ substats:{
 "HP":0,
 "ATK%":8,
 "ATK":4,
-"DEF%":,
+"DEF%":0,
 "DEF":0,
 "Energy Recharge":0,
 "Elemental Mastery":8
