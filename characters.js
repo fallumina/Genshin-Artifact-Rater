@@ -387,6 +387,437 @@ substats:{
 }
 },
 
+{
+character:"Candace",
+name:"Buff Support",
+
+sets:[
+{name:"Scroll of the Hero of Cinder City",score:30},
+{name:"Emblem of Severed Fate",score:25}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["Energy Recharge","HP%"],
+goblet:["HP%","Hydro DMG Bonus"],
+circlet:["HP%","Crit Rate","Crit DMG"]
+},
+
+substats:{
+"Crit Rate":8,
+"Crit DMG":0,
+"HP%":8,
+"HP":6,
+"ATK%":0,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":10,
+"Elemental Mastery":0
+}
+},
+
+
+{
+character:"Charlotte",
+name:"Heal Support",
+
+sets:[
+{name:"Noblesse Oblige",score:30},
+{name:"Tenacity of the Millelith",score:30},
+{name:"Ocean-Hued Clam",score:25},
+{name:"Scroll of the Hero of Cinder City",score:25},
+{name:"Song of Days Past",score:25},
+{name:"Maiden Beloved",score:20}
+{name:"Blizzard Strayer",score:15},
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["Energy Recharge","ATK%"],
+goblet:["ATK%"],
+circlet:["Healing Bonus","ATK%","Crit Rate"]
+},
+
+substats:{
+"Crit Rate":4,
+"Crit DMG":0,
+"HP%":0,
+"HP":0,
+"ATK%":10,
+"ATK":4,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":6,
+"Elemental Mastery":0
+}
+},
+
+
+{
+character:"Chasca",
+name:"DPS",
+
+sets:[
+{name:"Obsidian Codex",score:30},
+{name:"Viridescent Venerer",score:25},
+{name:"Marechaussee Hunter",score:20}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["ATK%"],
+goblet:["ATK%"],
+circlet:["Crit Rate","Crit DMG"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"HP":0,
+"ATK%":8,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":4,
+"Elemental Mastery":6
+}
+},
+
+
+{
+character:"Chevreuse",
+name:"Buff Support",
+
+sets:[
+{name:"Noblesse Oblige",score:30},
+{name:"Scroll of the Hero of Cinder City",score:25},
+{name:"Ocean-Hued Clam",score:25},
+{name:"Song of Days Past",score:25},
+{name:"Maiden Beloved",score:15}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["HP%","Energy Recharge"],
+goblet:["HP%"],
+circlet:["HP%","Healing Bonus"]
+},
+
+substats:{
+"Crit Rate":4,
+"Crit DMG":0,
+"HP%":10,
+"HP":6,
+"ATK%":0,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":6,
+"Elemental Mastery":4
+}
+},
+
+
+{
+character:"Chiori",
+name:"Off-Feild DPS",
+
+sets:[
+{name:"Golden Troupe",score:30},
+{name:"Husk of Opulent Dreams",score:30}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["DEF%"],
+goblet:["Geo DMG Bonus"],
+circlet:["Crit Rate","Crit DMG"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"HP":0,
+"ATK%":6,
+"ATK":0,
+"DEF%":8,
+"DEF":0,
+"Energy Recharge":4,
+"Elemental Mastery":0
+}
+},
+
+
+{
+character:"Chongyun",
+name:"Burst Nuke",
+
+sets:[
+{name:"Noblesse Oblige",score:30},
+{name:"Emblem of Severed Fate",score:25},
+{name:"Gilded Dreams",score:25}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["ATK%","Energy Recharge","Elemental Mastery"],
+goblet:["Cryo DMG Bonus"],
+circlet:["Crit DMG","Crit Rate"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"HP":0,
+"ATK%":8,
+"ATK":4,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":4,
+"Elemental Mastery":6
+}
+},
+
+
+{
+character:"Citlali",
+name:"Buff Support",
+
+sets:[
+{name:"Scroll of the Hero of Cinder City",score:30},
+{name:"Tenacity of the Millelith",score:25}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["Elemental Mastery","Energy Recharge"],
+goblet:["Elemental Mastery"],
+circlet:["Elemental Mastery"]
+},
+
+substats:{
+"Crit Rate":0,
+"Crit DMG":0,
+"HP%":0,
+"HP":0,
+"ATK%":0,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":10,
+"Elemental Mastery":10
+}
+},
+
+
+{
+character:"Clorinde",
+name:"DPS",
+
+sets:[
+{name:"Fragment of Harmonic Whimsy",score:30},
+{name:"Gladiator's Finale",score:25},
+{name:"Thundering Fury",score:20}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["ATK%","Elemental Mastery"],
+goblet:["Electro Dmg Bonus"],
+circlet:["Crit Rate","Crit DMG"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"HP":0,
+"ATK%":8,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":4,
+"Elemental Mastery":6
+}
+},
+
+
+{
+character:"Collei",
+name:"Reaction Support",
+
+sets:[
+{name:"Deepwood Memories",score:30},
+{name:"Noblesse Oblige",score:25},
+{name:"Tenacity of the Millelith",score:20},
+{name:"Gilded Dreams",score:15}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["Energy Recharge","ATK%","Elemental Mastery"],
+goblet:["Dendro DMG Bonus","Elemental Mastery"],
+circlet:["Crit Rate","Crit DMG","Elemental Mastery"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"HP":0,
+"ATK%":8,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":8,
+"Elemental Mastery":8
+}
+},
+
+
+{
+character:"Columbina",
+name:"Off-Feild DPS & Buff Support",
+
+sets:[
+{name:"Silken Moon's Serenade",score:30},
+{name:"Aubade of the Morningstar and Moon",score:30}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["HP%","Energy Recharge"],
+goblet:["HP%"],
+circlet:["Crit Rate","Crit DMG"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":8,
+"HP":4,
+"ATK%":0,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":6,
+"Elemental Mastery":4
+}
+},
+
+
+{
+character:"Columbina",
+name:"On-Feild DPS",
+
+sets:[
+{name:"Night of the Sky's Unveiling",score:30}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["HP%"],
+goblet:["HP%"],
+circlet:["Crit Rate","Crit DMG"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":10,
+"HP":4,
+"ATK%":0,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":6,
+"Elemental Mastery":4
+}
+},
+
+
+{
+character:"Cyno",
+name:"Aggravate DPS",
+
+sets:[
+{name:"Thundering Fury",score:30},
+{name:"Gladiator's Finale",score:25},
+{name:"Gilded Dreams",score:20},
+{name:"Thundersoothing",score:15}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["Elemental Mastery","ATK%"],
+goblet:["Electro DMG Bonus"],
+circlet:["Crit Rate","Crit Dmg"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"HP":0,
+"ATK%":8,
+"ATK":4,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":6,
+"Elemental Mastery":8
+}
+},
+
+
+{
+character:"Cyno",
+name:"Quickbloom/Hyperbloom DPS",
+
+sets:[
+{name:"Thundering Fury",score:30},
+{name:"Gilded Dreams",score:25},
+{name:"Flower of Paradise Lost",score:25},
+{name:"Gladiator's Finale",score:20}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["Elemental Mastery"],
+goblet:["Electro DMG Bonus","Elemental Mastery"],
+circlet:["Crit Rate","Crit DMG","Elemental Mastery"]
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"HP":0,
+"ATK%":6,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":8,
+"Elemental Mastery":10
+}
+},
+
 
 ];
 
