@@ -36,7 +36,7 @@ character:"Albedo",
 name:"Off-Feild DPS",
 
 sets:[
-{name:"Husk Of Opulant Dreams",score:30},
+{name:"Husk Of Opulent Dreams",score:30},
 {name:"Golden Troupe",score:30},
 {name:"Archaic Petra",score:25},
 {name:"Tenacity of the Millelith",score:20},
@@ -196,7 +196,7 @@ name:"DPS",
 sets:[
 {name:"Husk of Opulent Dreams",score:30},
 {name:"Desert Pavilion Chronicle",score:25},
-{name:"Retracting Bolide",score:20}
+{name:"Retracing Bolide",score:20}
 ],
 
 mainStats:{
@@ -226,7 +226,7 @@ character:"Arlecchino",
 name:"DPS",
 
 sets:[
-{name:"Fragment of Harmonic Whismy",score:30},
+{name:"Fragment of Harmonic Whimsy",score:30},
 {name:"Gladiator's Finale",score:25},
 {name:"Desert Pavilion Chronicle",score:20},
 {name:"Echoes of an Offering",score:15}
@@ -263,7 +263,7 @@ name:"Heal Support",
 
 sets:[
 {name:"Deepwood Memories",score:30},
-{name:"Ocean-Hued Clam ",score:25},
+{name:"Ocean-Hued Clam",score:25},
 {name:"Noblesse Oblige",score:20}
 ],
 
