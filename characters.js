@@ -1572,7 +1572,7 @@ sets:[
 {name:"Golden Troupe",score:30},
 {name:"Emblem of Severed Fate",score:25},
 {name:"Archaic Petra",score:20},
-{name:"Noblesse Oblige",score:15}
+{name:"Noblesse Oblige",score:15},
 {name:"Scroll of the Hero of Cinder City",score:15}
 ],
 
