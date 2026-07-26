@@ -1924,7 +1924,7 @@ substats:{
 "DEF%":0,
 "DEF":0,
 "Energy Recharge":10,
-"Elemental Mastery"4:
+"Elemental Mastery":4
 }
 },
 
@@ -1968,7 +1968,7 @@ character:"Kaedehara Kazuha",
 name:"Reaction DPS & Buff Support",
 
 sets:[
-{name:"Viridescent venerer",score:30},
+{name:"Viridescent Venerer",score:30},
 {name:"Thundering Fury",score:25}
 ],
 
@@ -1977,7 +1977,7 @@ flower:["HP"],
 feather:["ATK"],
 sands:["Elemental Mastery","Energy Recharge"],
 goblet:["Elemental Mastery"],
-circlet:["Elemental mastery"]
+circlet:["Elemental Mastery"]
 },
 
 substats:{
@@ -2313,9 +2313,9 @@ sets:[
 mainStats:{
 flower:["HP"],
 feather:["ATK"],
-sands:["Pyro DMG Bonus"],
-goblet:["Crit Rate","Crit DMG"],
-circlet:["",""]
+sands:["ATK%"],
+goblet:["Pyro DMG Bonus"],
+circlet:["Crit Rate","Crit DMG"]
 },
 
 substats:{
@@ -2346,7 +2346,7 @@ flower:["HP"],
 feather:["ATK"],
 sands:["Energy Recharge","ATK%"],
 goblet:["Electro DMG Bonus"],
-circlet:["Crit Rate","Crit dmg"]
+circlet:["Crit Rate","Crit DMG"]
 },
 
 substats:{
@@ -2391,7 +2391,7 @@ substats:{
 "ATK":0,
 "DEF%":0,
 "DEF":0,
-"Energy Recharge":,6
+"Energy Recharge":6,
 "Elemental Mastery":8
 }
 },
@@ -2433,7 +2433,7 @@ character:"Lauma",
 name:"Buff",
 
 sets:[
-{name:Silken Moon's Serenade"",score:30},
+{name:"Silken Moon's Serenade",score:30},
 {name:"Deepwood Memories",score:30},
 {name:"Night of the Sky's Unveiling",score:25},
 {name:"Gilded Dreams",score:20}
@@ -2468,7 +2468,7 @@ name:"Sheild Support",
 
 sets:[
 {name:"Tenacity of the Millelith",score:30},
-{name:Scroll of the Hero of Cinder City"",score:25},
+{name:"Scroll of the Hero of Cinder City",score:25},
 {name:"Noblesse Oblige",score:20}
 ],
 
@@ -2670,8 +2670,7 @@ name:"Off-Field DPS",
 sets:[
 {name:"Viridescent Venerer",score:30},
 {name:"Emblem of Severed Fate",score:25},
-{name:"",score:20},
-{name:"",score:15}
+{name:"Noblesse Oblige",score:20}
 ],
 
 mainStats:{
@@ -3406,8 +3405,7 @@ name:"Buff Support",
 sets:[
 {name:"Noblesse Oblige",score:30},
 {name:"Scroll of the Hero of Cinder City",score:25},
-{name:"Archaic Petra",score:20},
-{name:"Instructor",score:15}
+{name:"Archaic Petra",score:20}
 ],
 
 mainStats:{
@@ -3592,7 +3590,6 @@ substats:{
 }
 },
 
-
 {
 character:"Sethos",
 name:"Charged Attack DPS",
@@ -3630,7 +3627,7 @@ character:"Sethos",
 name:"Normal Attack DPS",
 
 sets:[
-{name:"Wanderer's troupe",score:30},
+{name:"Wanderer's Troupe",score:30},
 {name:"Desert Pavilion Chronicle",score:30},
 {name:"Gilded Dreams",score:25}
 ],
@@ -3640,7 +3637,7 @@ flower:["HP"],
 feather:["ATK"],
 sands:["Elemental Mastery","Energy Recharge"],
 goblet:["Electro DMG Bonus"],
-circlet:["Crit DMG","Crit rate"]
+circlet:["Crit DMG","Crit Rate"]
 },
 
 substats:{
@@ -4285,8 +4282,7 @@ name:"Buff & Reaction Support",
 sets:[
 {name:"Scroll of the Hero of Cinder City",score:30},
 {name:"Archaic Petra",score:25},
-{name:"Noblesse Oblige",score:20},
-{name:"Instructor",score:20}
+{name:"Noblesse Oblige",score:20}
 ],
 
 mainStats:{
@@ -4449,7 +4445,6 @@ name:"Heal Support",
 sets:[
 {name:"Deepwood Memories",score:30},
 {name:"Tenacity of the Millelith",score:25},
-{name:"Instructor",score:20},
 {name:"Ocean-Hued Clam",score:15},
 {name:"Maiden Beloved",score:10},
 {name:"Flower of Paradise Lost",score:5},
@@ -4612,7 +4607,6 @@ sets:[
 {name:"Archaic Petra",score:30},
 {name:"Scroll of the Hero of Cinder City",score:30},
 {name:"Deepwood Memories",score:25},
-{name:"Instructor",score:25},
 {name:"Tenacity of the Millelith",score:20}
 ],
 
