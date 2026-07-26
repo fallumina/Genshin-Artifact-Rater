@@ -2976,7 +2976,7 @@ sets:[
 {name:"Marechaussee Hunter",score:30},
 {name:"Heart of Depth",score:25},
 {name:"Retracing Bolide",score:20},
-{name:"Wanderer's Troupe",score:20}
+{name:"Wanderer's Troupe",score:20},
 {name:"Nymph's Dream",score:20}
 ],
 
