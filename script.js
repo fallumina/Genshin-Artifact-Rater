@@ -248,8 +248,10 @@ function rateArtifact() {
 
         let grade = "D";
 
+        if (score >=200)
+            grade = "SSS";
 
-        if (score >= 175)
+        else if (score >= 175)
             grade = "SS";
 
         else if (score >= 150)
