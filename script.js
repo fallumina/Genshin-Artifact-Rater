@@ -35,6 +35,7 @@ function updateMainStats() {
         stats = [
             "HP%",
             "DEF%",
+            "ATK%",
             "Elemental Mastery",
             "Hydro DMG Bonus",
             "Pyro DMG Bonus",
