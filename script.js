@@ -211,7 +211,20 @@ function rateArtifact() {
             score += 10;
 
 
+// Universal Substat Values
 
+const universalSubstatValues = {
+    "HP": 298.75,
+    "HP%": 5.83,
+    "ATK": 19.450,
+    "ATK%": 5.83,
+    "DEF": 23.150,
+    "DEF%": 7.29,
+    "Crit Rate": 3.89,
+    "Crit Damage": 7.77,
+    "Energy Recharge": 6.48,
+    "Elemental Mastery": 23.310
+};
         // Substats
 
         const substats = document.querySelectorAll(".substat");
@@ -231,9 +244,9 @@ function rateArtifact() {
             if (!value) return;
 
 
-            if (build.substats[stat]) {
+            if (build.substats[stat] && universalSubstatValues[stat]) {
 
-                subScore += build.substats[stat] * value;
+                subScore +=(value / universalSubstatValues[stat]) build.substats[stat];
 
             }
 
