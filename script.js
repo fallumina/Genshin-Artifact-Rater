@@ -5,16 +5,32 @@
 const slot = document.getElementById("slot");
 const mainStat = document.getElementById("mainStat");
 const mainStatBox = document.getElementById("mainStatBox");
+// Universal Substat Values
+
+const universalSubstatValues = {
+    "HP": 298.75,
+    "HP%": 5.83,
+    "ATK": 19.450,
+    "ATK%": 5.83,
+    "DEF": 23.150,
+    "DEF%": 7.29,
+    "Crit Rate": 3.89,
+    "Crit Damage": 7.77,
+    "Energy Recharge": 6.48,
+    "Elemental Mastery": 23.310
+};
 
 function updateMainStats() {
     mainStat.innerHTML = "";
 
     if (slot.value === "flower" || slot.value === "feather") {
         mainStatBox.style.display = "none";
+        mainStat.disabled = true;
         return;
     }
 
     mainStatBox.style.display = "block";
+    mainStat.disabled = false;
 
     let stats = [];
 
@@ -211,20 +227,7 @@ function rateArtifact() {
             score += 10;
 
 
-// Universal Substat Values
 
-const universalSubstatValues = {
-    "HP": 298.75,
-    "HP%": 5.83,
-    "ATK": 19.450,
-    "ATK%": 5.83,
-    "DEF": 23.150,
-    "DEF%": 7.29,
-    "Crit Rate": 3.89,
-    "Crit Damage": 7.77,
-    "Energy Recharge": 6.48,
-    "Elemental Mastery": 23.310
-};
         // Substats
 
         const substats = document.querySelectorAll(".substat");
@@ -244,9 +247,11 @@ const universalSubstatValues = {
             if (!value) return;
 
 
-            if (build.substats[stat] && universalSubstatValues[stat]) {
+            if (
+                build.substats[stat] !== undefined && universalSubstatValues[stat] !== undefined) {
 
-                subScore +=(value / universalSubstatValues[stat]) build.substats[stat];
+                subScore +=
+                (value / universalSubstatValues[stat]) * build.substats[stat];
 
             }
 
