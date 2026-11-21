@@ -166,9 +166,6 @@ function rateArtifact() {
 
 
         // Artifact set
-if (!Array.isArray(build.sets)) {
-    console.error("Missing or invalid sets:", build);
-    return;
 }
         build.sets.forEach(set => {
 
