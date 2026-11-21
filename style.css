@@ -437,8 +437,19 @@ h1 {
 
 
 }
+.resultCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resultInfo {
+    flex: 1;
+}
+
 .characterImage {
-    width: 80px;
-    height: 80px;
+    width: 140px;
+    height: 140px;
     object-fit: contain;
+    margin-left: 15px;
 }

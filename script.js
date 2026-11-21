@@ -313,8 +313,8 @@ function rateArtifact() {
 
     top10.map((result,i)=>`
 
-  <div class="resultCard">
-<img src="${result.image}" class="characterImage">
+ <div class="resultCard">
+<div class="resultInfo">
 <h3>${i+1}. ${result.character}</h3>
 
     <p>
@@ -333,7 +333,8 @@ function rateArtifact() {
 
     </p>
 
-    </div>
+  </div>
+<img src="${result.image}" class="characterImage">
 
     `).join("");
 
