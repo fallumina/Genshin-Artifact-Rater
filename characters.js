@@ -4089,7 +4089,7 @@ name:"DPS",
 
 sets:[
 {name:"Nymph's Dream",score:30},
-{name:"A Day Carved From Rising Winds",score:25}
+{name:"A Day Carved From Rising Winds",score:25},
 {name:"Heart of Depth",score:20}
 ],
 
