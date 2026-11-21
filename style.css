@@ -438,18 +438,21 @@ h1 {
 
 }
 .resultCard {
-    display: flex;
+    display: flex !important;
+    flex-direction: row !important;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 .resultInfo {
     flex: 1;
+    min-width: 0;
 }
 
 .characterImage {
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 180px;
     object-fit: contain;
-    margin-left: 15px;
+    flex-shrink: 0;
 }
