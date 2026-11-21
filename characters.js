@@ -2424,7 +2424,7 @@ name:"DPS",
 sets:[
 {name:"A Day Carved From Rising Winds",score:30},
 {name:"Lavawalker",score:25},
-{name:"Celestial Gift",Score:25},
+{name:"Celestial Gift",score:25},
 {name:"Echoes of an Offering",score:20},
 {name:"Desert Pavilion Chronicle",score:15},
 {name:"Fragment of Harmonic Whimsy",score:10}
