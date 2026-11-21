@@ -166,7 +166,6 @@ function rateArtifact() {
 
 
         // Artifact set
-}
         build.sets.forEach(set => {
 
             if (set.name === selectedSet) {
