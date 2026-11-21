@@ -127,6 +127,36 @@ substats:{
 "Elemental Mastery":6
 }
 },
+{
+character:"Alyosha",
+name:"Buff Support",
+
+sets:[
+{name:"Heart of the Furnace",score:30},
+{name:"Noblesse Oblige",score:25},
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["ATK%","Energy Recharge"],
+goblet:["ATK%"],
+circlet:["Crit Rate","ATK%"],
+},
+
+substats:{
+"Crit Rate":6,
+"Crit DMG":0,
+"HP%":0,
+"HP":0,
+"ATK%":8,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":10,
+"Elemental Mastery":0
+}
+},
 
 {
 character:"Amber",
@@ -164,15 +194,17 @@ character:"Traveler",
 name:"Anemo DPS",
 
 sets:[
-{name:"Viridescent Venerer",score:30}
+{name:"Viridescent Venerer",score:30},
+{name:"Noblesse Oblige",score:25},
+{name:"Scroll of the Hero of Cinder City",score:20}
 ],
 
 mainStats:{
 flower:["HP"],
 feather:["ATK"],
-sands:["Elemental Mastery","ATK%", "Energy Recharge"],
-goblet:["Elemental Mastery","Anemo DMG Bonus"],
-circlet:["Elemental Mastery","Crit Rate","Crit DMG"]
+sands:["Elemental Mastery","ATK%"],
+goblet:["Anemo DMG Bonus"],
+circlet:["Crit Rate","Crit DMG"]
 },
 
 substats:{
@@ -254,9 +286,6 @@ substats:{
 }
 },
 
-
-
-
 {
 character:"Baizhu",
 name:"Heal Support",
@@ -321,6 +350,34 @@ substats:{
 }
 },
 
+{character:"Barbara",
+    name:"Bloom DPS"
+    sets:[
+        {name:"Flower Of Paradise Lost",score:30},
+        {name:"Gilded Dreams",score:25},
+        {name:"Ocean-Hued Clam",score:20}
+    ],
+    mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["Elemental Mastery"],
+goblet:["Elemental Mastery"],
+circlet:["Elemental Mastery"],
+},
+
+substats:{
+"Crit Rate":0,
+"Crit DMG":0,
+"HP%":0,
+"HP":0,
+"ATK%":0,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":10,
+"Elemental Mastery":10
+}
+},
 
 {
 character:"Beidou",
@@ -623,12 +680,13 @@ substats:{
 
 {
 character:"Clorinde",
-name:"DPS",
+name:"DPS (Dendro Teams)",
 
 sets:[
 {name:"Fragment of Harmonic Whimsy",score:30},
-{name:"Gladiator's Finale",score:25},
-{name:"Thundering Fury",score:20}
+{name:"Gladiator's Finale",score:20},
+{name:"Echoes of an Offering",score:25},
+{name:"Thundering Fury",score:30}
 ],
 
 mainStats:{
@@ -650,6 +708,40 @@ substats:{
 "DEF":0,
 "Energy Recharge":4,
 "Elemental Mastery":6
+}
+},
+
+{
+character:"Clorinde",
+name:"Electro DPS",
+
+sets:[
+{name:"Fragment of Harmonic Whimsy",score:30},
+{name:"Echoes of an Offering",score:25},
+{name:"Gladiator's Finale",score:20},
+{name:"A Day Carved From Rising Winds",score:15},
+{name:"Night of the Sky's Unveiling",score:10}
+],
+
+mainStats:{
+flower:["HP"],
+feather:["ATK"],
+sands:["ATK%"],
+goblet:["Electro DMG Bonus"],
+circlet:["Crit Rate","Crit DMG"],
+},
+
+substats:{
+"Crit Rate":10,
+"Crit DMG":10,
+"HP%":0,
+"HP":0,
+"ATK%":8,
+"ATK":0,
+"DEF%":0,
+"DEF":0,
+"Energy Recharge":6,
+"Elemental Mastery":0
 }
 },
 
@@ -749,11 +841,66 @@ substats:{
 "Elemental Mastery":4
 }
 },
-
+{
+    character:"Traveler",
+    name:"Stellar Glimmer DPS",
+    sets:[
+        {name:"Disenchantment in Deep Shadow",score:30},
+        {name:"A Day Carved From Rising Winds",score:25},
+        {name:"Gilded Dreams",score:25}
+    ],
+    mainStats:{
+        flower:["HP"],
+        feather:["ATK"],
+        sands:["ATK%"],
+        goblet:["ATK%"],
+        circlet:["Crit Rate","Crit DMG"]
+    },
+    substats:{
+        "Energy Recharge":10,
+        "Crit Rate":8,
+        "Crit DMG":8,
+        "ATK%":6,
+        "Elemental Mastery":4,
+        "HP%":0,
+        "HP":0,
+        "ATK":0,
+        "DEF%":0,
+        "DEF":0
+    }
+},
+{
+    character:"Traveler",
+    name:"Stellar Glimmer Support",
+    sets:[
+        {name:"Heart of the Furnace",score:30},
+        {name:"Tenacity of the Millelith",score:30},
+        {name:"Noblesse Oblige",score:25}
+    ],
+    mainStats:{
+        flower:["HP"],
+        feather:["ATK"],
+        sands:["ATK%"],
+        goblet:["ATK%"],
+        circlet:["Crit Rate","Crit DMG"]
+    },
+    substats:{
+        "Energy Recharge":10,
+        "Crit Rate":8,
+        "Crit DMG":8,
+        "ATK%":6,
+        "Elemental Mastery":4,
+        "HP%":0,
+        "HP":0,
+        "ATK":0,
+        "DEF%":0,
+        "DEF":0
+    }
+},
 
 {
 character:"Cyno",
-name:"Aggravate DPS",
+name:"Electro DPS",
 
 sets:[
 {name:"Thundering Fury",score:30},
@@ -787,21 +934,20 @@ substats:{
 
 {
 character:"Cyno",
-name:"Quickbloom/Hyperbloom DPS",
+name:"Stellar-Conduct DPS",
 
 sets:[
-{name:"Thundering Fury",score:30},
+{name:"Disenchantmet in Deep Shadow",score:30},
 {name:"Gilded Dreams",score:25},
-{name:"Flower of Paradise Lost",score:25},
-{name:"Gladiator's Finale",score:20}
+{name:"A Day Carved From Rising Winds",score:25}
 ],
 
 mainStats:{
 flower:["HP"],
 feather:["ATK"],
-sands:["Elemental Mastery"],
-goblet:["Electro DMG Bonus","Elemental Mastery"],
-circlet:["Crit Rate","Crit DMG","Elemental Mastery"]
+sands:["ATK%"],
+goblet:["ATK%"],
+circlet:["Crit Rate","Crit DMG"]
 },
 
 substats:{
@@ -814,7 +960,7 @@ substats:{
 "DEF%":0,
 "DEF":0,
 "Energy Recharge":8,
-"Elemental Mastery":10
+"Elemental Mastery":4
 }
 },
 
@@ -887,7 +1033,8 @@ name:"Dendro Reaction Support",
 sets:[
 {name:"Deepwood Memories",score:30},
 {name:"Noblesse Oblige",score:25},
-{name:"Gilded Dreams",score:20}
+{name:"Scroll of the Hero of Cinder City",score:20},
+{name:"Gilded Dreams",score:15}
 ],
 
 mainStats:{
@@ -1342,6 +1489,7 @@ name:"Cryo DPS",
 sets:[
 {name:"Blizzard Strayer",score:30},
 {name:"Golden Troupe",score:25},
+{name:"A Day Carved From Rising Winds",score:25},
 {name:"Marechaussee Hunter",score:20}
 ],
 
@@ -1373,9 +1521,13 @@ name:"Physical DPS",
 
 sets:[
 {name:"Pale Flame",score:30},
-{name:"Golden Troupe",score:25},
-{name:"Gladiator's Finale",score:20},
-{name:"Marechaussee Hunter",score:15}
+{name:"Disenchantment in Deep Shadows",score:25},
+{name:"Golden Troupe",score:20},
+{name:"A Day Carved From Rising Winds",score:20},
+{name:"Gladiator's Finale",score:15},
+{name:"Blizzard Strayer",score:15},
+{name:"Gilded Dreams",score:15},
+{name:"Marechaussee Hunter",score:10}
 ],
 
 mainStats:{
@@ -1667,40 +1819,7 @@ substats:{
 
 {
 character:"Traveler",
-name:"On-Feild Hydro DPS",
-
-sets:[
-{name:"Marechaussee Hunter",score:30},
-{name:"Emblem of Severed Fate",score:25},
-{name:"Golden Troupe",score:20}
-],
-
-mainStats:{
-flower:["HP"],
-feather:["ATK"],
-sands:["Energy Recharge","ATK%"],
-goblet:["Hydro DMG Bonus"],
-circlet:["Crit Rate","Crit DMG"]
-},
-
-substats:{
-"Crit Rate":8,
-"Crit DMG":8,
-"HP%":4,
-"HP":0,
-"ATK%":6,
-"ATK":0,
-"DEF%":0,
-"DEF":0,
-"Energy Recharge":10,
-"Elemental Mastery":0
-}
-},
-
-
-{
-character:"Traveler",
-name:"Hydro Support",
+name:"Support - Hydro",
 
 sets:[
 {name:"Noblesse Oblige",score:30},
@@ -1719,7 +1838,7 @@ circlet:["Crit Rate","Crit DMG","Healing Bonus"]
 substats:{
 "Crit Rate":8,
 "Crit DMG":8,
-"HP%":0,
+"HP%":4,
 "HP":0,
 "ATK%":6,
 "ATK":0,
@@ -1770,7 +1889,8 @@ name:"Anemo DPS",
 sets:[
 {name:"Obsidian Codex",score:30},
 {name:"Viridescent Venerer",score:25},
-{name:"Scroll of the Hero of Cinder City",score:20}
+{name:"Scroll of the Hero of Cinder City",score:25},
+{name:"A Day Carved From Rising Winds",score:20}
 ],
 
 mainStats:{
@@ -2304,9 +2424,9 @@ name:"DPS",
 sets:[
 {name:"A Day Carved From Rising Winds",score:30},
 {name:"Lavawalker",score:25},
+{name:"Celestial Gift", Score:25}
 {name:"Echoes of an Offering",score:20},
-{name:"Desert Pavilion Chronicle",score:20},
-{name:"Wanderer's Troupe",score:15},
+{name:"Desert Pavilion Chronicle",score:15},
 {name:"Fragment of Harmonic Whimsy",score:10}
 ],
 
@@ -2801,6 +2921,33 @@ substats:{
 }
 },
 
+{
+    character:"Mitya",
+    name:"On-Field DPS",
+    sets:[
+        {name:"Disenchantment in Deep Shadow",score:30},
+        {name:"Gilded Dreams",score:30}
+    ],
+    mainStats:{
+        flower:["HP"],
+        feather:["ATK"],
+        sands:["Elemental Mastery"],
+        goblet:["Elemental Mastery"],
+        circlet:["Crit Rate","Crit DMG","Elemental Mastery"],
+    },
+    substats:{
+        "Crit Rate":10,
+        "Crit DMG":10,
+        "Elemental Mastery":10,
+        "Energy Recharge":8,
+        "HP%":0,
+        "HP":0,
+        "ATK%":0,
+        "ATK":0,
+        "DEF%":0,
+        "DEF":0
+    }
+},
 
 {
 character:"Mona",
@@ -2911,7 +3058,8 @@ name:"DPS",
 sets:[
 {name:"Nighttime Whispers in the Echoing Woods",score:30},
 {name:"Golden Troupe",score:25},
-{name:"Marechaussee Hunter",score:20}
+{name:"Marechaussee Hunter",score:20},
+{name:"A Day Carved From Rising Winds",score:20}
 ],
 
 mainStats:{
@@ -3111,13 +3259,14 @@ sets:[
 {name:"Husk of Opulent Dreams",score:30},
 {name:"Retracing Bolide",score:25},
 {name:"Gladiator's Finale",score:25},
+{name:"Nighttime Whispers in the Echoing Woods",score:25},
 {name:"Marechaussee Hunter",score:20}
 ],
 
 mainStats:{
 flower:["HP"],
 feather:["ATK"],
-sands:["DEF%","ATK%"],
+sands:["DEF%","ATK%","Energy Recharge"],
 goblet:["Geo DMG Bonus"],
 circlet:["Crit Rate","Crit DMG"]
 },
@@ -3144,13 +3293,14 @@ sets:[
 {name:"Archaic Petra",score:30},
 {name:"Husk of Opulent Dreams",score:25},
 {name:"Retracing Bolide",score:20},
-{name:"Gladiator's Finale",score:20}
+{name:"Gladiator's Finale",score:20},
+{name:"Nighttime Whispers in the Echoing Woods",score:20}
 ],
 
 mainStats:{
 flower:["HP"],
 feather:["ATK"],
-sands:["DEF%"],
+sands:["DEF%","Energy Recharge"],
 goblet:["Geo DMG Bonus","DEF%"],
 circlet:["Crit Rate","Crit DMG","DEF%"]
 },
@@ -3168,7 +3318,65 @@ substats:{
 "Elemental Mastery":0
 }
 },
-
+{
+    character:"Noelle",
+    name:"Lunar-Crystallize DPS",
+    sets:[
+        {name:"Husk of Opulent Dreams",score:30},
+        {name:"Nighttime Whispers in the Echoing Woods",score:25},
+        {name:"Retracing Bolide",score:25},
+        {name:"Gladiator's Finale",score:25}
+    ],
+    mainStats:{
+        flower:["HP"],
+        feather:["ATK"],
+        sands:["DEF%","ATK%","Energy Recharge"],
+        goblet:["Geo DMG Bonus","DEF%"],
+        circlet:["Crit Rate","Crit DMG"]
+    },
+    substats:{
+        "Energy Recharge":10,
+        "Crit Rate":8,
+        "Crit DMG":8,
+        "DEF%":6,
+        "ATK%":4,
+        "Elemental Mastery":2,
+        "HP%":0,
+        "HP":0,
+        "ATK":0,
+        "DEF":0
+    }
+},
+{
+    character:"Odette",
+    name:"Off-field DPS",
+    sets:[
+        {name:"Heart of the Furnace",score:30},
+        {name:"Disenchantment in Deep Shadow",score:25},
+        {name:"Blizzard Strayer",score:20},
+        {name:"Tenacity of the Millelith",score:20},
+        {name:"A Day Carved From Rising Winds",score:15}
+    ],
+    mainStats:{
+        flower:["HP"],
+        feather:["ATK"],
+        sands:["ATK%"],
+        goblet:["ATK%"],
+        circlet:["Crit Rate","Crit DMG"]
+    },
+    substats:{
+        "Crit Rate":10,
+        "Crit DMG":10,
+        "ATK%":8,
+        "Elemental Mastery":6,
+        "Energy Recharge":0,
+        "HP%":0,
+        "HP":0,
+        "ATK":0,
+        "DEF%":0,
+        "DEF":0
+    }
+},
 {
 character:"Ororon",
 name:"Off-Field DPS",
@@ -3265,6 +3473,35 @@ substats:{
 }
 },
 
+{
+    character:"Traveler",
+    name:"Pyro DPS",
+    sets:[
+        {name:"Obsidian Codex",score:30},
+        {name:"Scroll of the Hero of Cinder City",score:25},
+        {name:"Crimson Witch of Flames",score:20},
+        {name:"Gilded Dreams",score:20}
+    ],
+    mainStats:{
+        flower:["HP"],
+        feather:["ATK"],
+        sands:["Energy Recharge","ATK%","Elemental Mastery"],
+        goblet:["Pyro DMG Bonus"],
+        circlet:["Crit Rate","Crit DMG"]
+    },
+    substats:{
+        "Energy Recharge":10,
+        "Crit Rate":8,
+        "Crit DMG":8,
+        "Elemental Mastery":6,
+        "ATK%":4,
+        "HP%":0,
+        "HP":0,
+        "ATK":0,
+        "DEF%":0,
+        "DEF":0
+    }
+},
 
 {
 character:"Traveler",
@@ -3852,8 +4089,8 @@ name:"DPS",
 
 sets:[
 {name:"Nymph's Dream",score:30},
-{name:"Heart of Depth",score:25},
-{name:"Shimenawa's Reminiscence",score:15}
+{name:"A Day Carved From Rising Winds",score:25}
+{name:"Heart of Depth",score:20}
 ],
 
 mainStats:{
@@ -3942,7 +4179,34 @@ substats:{
 "Elemental Mastery":8
 }
 },
-
+{
+    character:"Valeriy",
+    name:"Buff & Shield Support",
+    sets:[
+        {name:"Heart of the Furnace",score:30},
+        {name:"Noblesse Oblige",score:30},
+        {name:"A Day Carved From Rising Winds",score:25}
+    ],
+    mainStats:{
+        flower:["HP"],
+        feather:["ATK"],
+        sands:["ATK%","Energy Recharge"],
+        goblet:["ATK%"],
+        circlet:["ATK%","Crit Rate"]
+    },
+    substats:{
+        "Energy Recharge":10,
+        "ATK%":8,
+        "Crit Rate":6,
+        "ATK":4,
+        "Crit DMG":0,
+        "HP%":0,
+        "HP":0,
+        "DEF%":0,
+        "DEF":0,
+        "Elemental Mastery":0
+    }
+},
 {
 character:"Varesa",
 name:"Plunge DPS",
@@ -4075,6 +4339,64 @@ substats:{
 "Elemental Mastery":6
 }
 },
+
+{
+    character:"Vesna",
+    name:"Stellar Swirl DPS",
+    sets:[
+        {name:"Scarlet Proof",score:30},
+        {name:"Gilded Dreams",score:25},
+        {name:"A Day Carved From Rising Winds",score:20}
+    ],
+    mainStats:{
+        flower:["HP"],
+        feather:["ATK"],
+        sands:["ATK%"],
+        goblet:["ATK%"],
+        circlet:["Crit Rate","Crit DMG"]
+    },
+    substats:{
+        "Crit Rate":10,
+        "Crit DMG":10,
+        "ATK%":8,
+        "Elemental Mastery":6,
+        "Energy Recharge":4,
+        "HP%":0,
+        "HP":0,
+        "ATK":0,
+        "DEF%":0,
+        "DEF":0
+    }
+},
+{
+    character:"Vodyanitsa",
+    name:"Heal & Buff Support",
+    sets:[
+        {name:"Tenacity of the Millelith",score:30},
+        {name:"Scroll of the Hero of Cinder City",score:25},
+        {name:"Song of Days Past",score:20},
+        {name:"Ocean-Hued Clam",score:20}
+    ],
+    mainStats:{
+        flower:["HP"],
+        feather:["ATK"],
+        sands:["HP%"],
+        goblet:["HP%"],
+        circlet:["HP%"]
+    },
+    substats:{
+        "HP%":10,
+        "HP":8,
+        "Energy Recharge":6,
+        "Crit Rate":0,
+        "Crit DMG":0,
+        "ATK%":0,
+        "ATK":0,
+        "DEF%":0,
+        "DEF":0,
+        "Elemental Mastery":0
+    }
+},
 {
 character:"Wanderer",
 name:"DPS",
@@ -4172,6 +4494,36 @@ substats:{
 "Energy Recharge":6,
 "Elemental Mastery":0
 }
+},
+{
+    character:"Wriothesley",
+    name:"Stellar-Conduct DPS",
+    sets:[
+        {name:"Disenchantment in Deep Shadow",score:30},
+        {name:"Marechaussee Hunter",score:25},
+        {name:"A Day Carved From Rising Winds",score:20},
+        {name:"Blizzard Strayer",score:15},
+        {name:"Gilded Dreams",score:10}
+    ],
+    mainStats:{
+        flower:["HP"],
+        feather:["ATK"],
+        sands:["ATK%","Elemental Mastery"],
+        goblet:["ATK%"],
+        circlet:["Crit Rate","Crit DMG"]
+    },
+    substats:{
+        "Crit Rate":10,
+        "Crit DMG":10,
+        "ATK%":8,
+        "Elemental Mastery":8,
+        "HP%":0,
+        "HP":0,
+        "ATK":0,
+        "DEF%":0,
+        "DEF":0,
+        "Energy Recharge":0
+    }
 },
 
 {
@@ -4348,7 +4700,9 @@ name:"Physical DPS",
 
 sets:[
 {name:"Pale Flame",score:30},
-{name:"Bloodstained Chivalry",score:30}
+{name:"Disenchantment in Deep Shadows",score:25},
+{name:"A Day Carved From Rising Winds",score:20},
+{name:"Retracing Bolide",score:20}
 ],
 
 mainStats:{
@@ -4371,6 +4725,34 @@ substats:{
 "Energy Recharge":6,
 "Elemental Mastery":0
 }
+},
+{
+    character:"Xinyan",
+    name:"Shield Support",
+    sets:[
+        {name:"Tenacity of the Millelith",score:30},
+        {name:"Scroll of the Hero of Cinder City",score:30},
+        {name:"Husk of Opulent Dreams",score:25}
+    ],
+    mainStats:{
+        flower:["HP"],
+        feather:["ATK"],
+        sands:["DEF%","Energy Recharge"],
+        goblet:["DEF%"],
+        circlet:["DEF%"]
+    },
+    substats:{
+        "Energy Recharge":10,
+        "ATK%":8,
+        "DEF%":8,
+        "Crit Rate":6,
+        "Crit DMG":6,
+        "HP%":0,
+        "HP":0,
+        "ATK":0,
+        "DEF":0,
+        "Elemental Mastery":0
+    }
 },
 
 {
@@ -4506,13 +4888,11 @@ substats:{
 
 {
 character:"Yoimiya",
-name:"DPS",
+name:"Overload DPS",
 
 sets:[
 {name:"Shimenawa's Reminiscence",score:30},
-{name:"Crimson Witch of Flames",score:25},
-{name:"Gilded Dreams",score:20},
-{name:"Echoes of an Offering",score:15}
+{name:"Echoes of an Offering",score:25}
 ],
 
 mainStats:{
@@ -4535,6 +4915,35 @@ substats:{
 "Energy Recharge":4,
 "Elemental Mastery":6
 }
+},
+{
+    character:"Yoimiya",
+    name:"Vaporize/Melt DPS",
+    sets:[
+        {name:"Shimenawa's Reminiscence",score:30},
+        {name:"Crimson Witch of Flames",score:25},
+        {name:"Gilded Dreams",score:20},
+        {name:"Echoes of an Offering",score:15}
+    ],
+    mainStats:{
+        flower:["HP"],
+        feather:["ATK"],
+        sands:["ATK%","Elemental Mastery"],
+        goblet:["Pyro DMG Bonus"],
+        circlet:["Crit Rate","Crit DMG"]
+    },
+    substats:{
+        "Crit Rate":10,
+        "Crit DMG":10,
+        "ATK%":8,
+        "Elemental Mastery":6,
+        "Energy Recharge":4,
+        "HP%":0,
+        "HP":0,
+        "ATK":0,
+        "DEF%":0,
+        "DEF":0
+    }
 },
 
 {
@@ -4565,6 +4974,33 @@ substats:{
 "Energy Recharge":10,
 "Elemental Mastery":8
 }
+},
+{
+    character:"Yumemizuki Mizuki",
+    name:"Stellar Swirl DPS",
+    sets:[
+        {name:"Gilded Dreams",score:30},
+        {name:"Scarlet Proof",score:25}
+    ],
+    mainStats:{
+        flower:["HP"],
+        feather:["ATK"],
+        sands:["Elemental Mastery"],
+        goblet:["Elemental Mastery"],
+        circlet:["Crit Rate","Crit DMG"]
+    },
+    substats:{
+        "Crit Rate":10,
+        "Crit DMG":10,
+        "Elemental Mastery":8,
+        "Energy Recharge":6,
+        "HP%":0,
+        "HP":0,
+        "ATK%":0,
+        "ATK":0,
+        "DEF%":0,
+        "DEF":0
+    }
 },
 
 {
