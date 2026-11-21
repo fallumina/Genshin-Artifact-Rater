@@ -351,8 +351,8 @@ substats:{
 },
 
 {character:"Barbara",
-    name:"Bloom DPS"
-    sets:[
+    name:"Bloom DPS",
+    set:[
         {name:"Flower Of Paradise Lost",score:30},
         {name:"Gilded Dreams",score:25},
         {name:"Ocean-Hued Clam",score:20}
