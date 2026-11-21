@@ -1158,6 +1158,7 @@ substats:{
 
 {
 character:"Durin",
+image: "https://static.wikia.nocookie.net/gensin-impact/images/c/cd/Durin_Item.png/revision/latest?cb=20251204124008",
 name:"Buff Support & Off Field DPS",
 
 sets:[

@@ -15,7 +15,7 @@ const universalSubstatValues = {
     "DEF": 23.150,
     "DEF%": 7.29,
     "Crit Rate": 3.89,
-    "Crit Damage": 7.77,
+    "Crit DMG": 7.77,
     "Energy Recharge": 6.48,
     "Elemental Mastery": 23.310
 };
@@ -290,6 +290,7 @@ function rateArtifact() {
         results.push({
 
             character: build.character,
+            image: build.image,
             build: build.name,
             score: Math.round(score),
             grade: grade
@@ -313,9 +314,9 @@ function rateArtifact() {
 
     top10.map((result,i)=>`
 
-    <div class="resultCard">
-
-    <h3>${i+1}. ${result.character}</h3>
+  <div class="resultCard">
+<img src="${result.image}" class="characterImage">
+<h3>${i+1}. ${result.character}</h3>
 
     <p>
 
