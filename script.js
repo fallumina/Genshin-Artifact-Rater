@@ -335,7 +335,7 @@ function rateArtifact() {
 
   </div>
 <img src="${result.image}" class="characterImage">
-
+</div>
     `).join("");
 
 }
