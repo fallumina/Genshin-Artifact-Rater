@@ -1126,7 +1126,7 @@ substats:{
 
 {
 character:"Diona",
-image:"https://static.wikia.nocookie.net/gensin-impact/images/a/aa/Diona_Item.png/revision/latest?cb=20260304040202"
+image:"https://static.wikia.nocookie.net/gensin-impact/images/a/aa/Diona_Item.png/revision/latest?cb=20260304040202",
 name:"Heal & Shield Support",
 
 sets:[
@@ -1669,7 +1669,7 @@ substats:{
 
 {
 character:"Ganyu",
-image:"https://static.wikia.nocookie.net/gensin-impact/images/e/ea/Ganyu_Item.png/revision/latest?cb=20210621072705"
+image:"https://static.wikia.nocookie.net/gensin-impact/images/e/ea/Ganyu_Item.png/revision/latest?cb=20210621072705",
 name:"Freeze DPS",
 
 sets:[
@@ -1702,7 +1702,7 @@ substats:{
 
 {
 character:"Ganyu",
-image:"https://static.wikia.nocookie.net/gensin-impact/images/e/ea/Ganyu_Item.png/revision/latest?cb=20210621072705"
+image:"https://static.wikia.nocookie.net/gensin-impact/images/e/ea/Ganyu_Item.png/revision/latest?cb=20210621072705",
 name:"Cryo DPS",
 
 sets:[
@@ -1734,7 +1734,7 @@ substats:{
 
 {
 character:"Ganyu",
-image:"https://static.wikia.nocookie.net/gensin-impact/images/e/ea/Ganyu_Item.png/revision/latest?cb=20210621072705"
+image:"https://static.wikia.nocookie.net/gensin-impact/images/e/ea/Ganyu_Item.png/revision/latest?cb=20210621072705",
 name:"Melt DPS",
 
 sets:[
