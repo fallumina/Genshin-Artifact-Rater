@@ -1,6 +1,7 @@
 const characters = [
 {
 character:"Aino",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/9/94/Aino_Item.png/revision/latest?cb=20250910025354",
 name:"Reaction Support",
 
 sets:[
@@ -33,6 +34,7 @@ substats:{
 },
 {
 character:"Albedo",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/d/d2/Albedo_Item.png/revision/latest?cb=20260304040134",
 name:"Off-Feild DPS",
 
 sets:[
@@ -66,6 +68,7 @@ substats:{
 
 {
 character:"Alhaitham",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Alhaitham_Item.png/revision/latest?cb=20230118023142",
 name:"Spread DPS",
 
 sets:[
@@ -97,6 +100,7 @@ substats:{
 
 {
 character:"Aloy",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/1/13/Aloy_Item.png/revision/lates?cb=20210905075454",
 name:"Burst Support",
 
 sets:[
@@ -129,6 +133,7 @@ substats:{
 },
 {
 character:"Alyosha",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/c/c3/Alyosha_Item.png/revision/latest?cb=20260812034112",
 name:"Buff Support",
 
 sets:[
@@ -160,6 +165,7 @@ substats:{
 
 {
 character:"Amber",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/2/2a/Amber_Item.png/revision/latest?cb=20210621072652",
 name:"Buff Support",
 
 sets:[
@@ -191,6 +197,7 @@ substats:{
 
 {
 character:"Traveler",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/1/14/Lumine_Item.png/revision/latest?cb=20260521152946",
 name:"Anemo DPS",
 
 sets:[
@@ -223,6 +230,7 @@ substats:{
 
 {
 character:"Arataki Itto",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/7/71/Arataki_Itto_Item.png/revision/latest?cb=20211214102941",
 name:"DPS",
 
 sets:[
@@ -255,6 +263,7 @@ substats:{
 
 {
 character:"Arlecchino",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/4/44/Arlecchino_Item.png/revision/latest?cb=20240424055913",
 name:"DPS",
 
 sets:[
@@ -288,6 +297,7 @@ substats:{
 
 {
 character:"Baizhu",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/6/63/Baizhu_Item.png/revision/latest?cb=20230502113507",
 name:"Heal Support",
 
 sets:[
@@ -321,6 +331,7 @@ substats:{
 
 {
 character:"Barbara",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/d/d4/Barbara_Item.png/revision/latest?cb=20210621072654",
 name:"Heal Support",
 
 sets:[
@@ -351,6 +362,7 @@ substats:{
 },
 
 {character:"Barbara",
+    image:"https://static.wikia.nocookie.net/gensin-impact/images/d/d4/Barbara_Item.png/revision/latest?cb=20210621072654",
     name:"Bloom DPS",
     sets:[
         {name:"Flower Of Paradise Lost",score:30},
@@ -381,6 +393,7 @@ substats:{
 
 {
 character:"Beidou",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Beidou_Item.png/revision/latest?cb=20210621072655",
 name:"Off-Feild DPS",
 
 sets:[
@@ -414,6 +427,7 @@ substats:{
 
 {
 character:"Bennett",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/0/0d/Bennett_Item.png/revision/latest?cb=20210621072656",
 name:"Support",
 
 sets:[
@@ -446,6 +460,7 @@ substats:{
 
 {
 character:"Candace",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Candace_Item.png/revision/latest?cb=20220928023622",
 name:"Buff Support",
 
 sets:[
@@ -478,6 +493,7 @@ substats:{
 
 {
 character:"Charlotte",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/c/cd/Charlotte_Item.png/revision/latest?cb=20231108031147",
 name:"Heal Support",
 
 sets:[
@@ -515,6 +531,7 @@ substats:{
 
 {
 character:"Chasca",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/4/41/Chasca_Item.png/revision/latest?cb=20241120030419",
 name:"DPS",
 
 sets:[
@@ -548,6 +565,7 @@ substats:{
 
 {
 character:"Chevreuse",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/e/e9/Chevreuse_Item.png/revision/latest?cb=20240109210122",
 name:"Buff Support",
 
 sets:[
@@ -583,6 +601,7 @@ substats:{
 
 {
 character:"Chiori",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/e/e0/Chiori_Item.png/revision/latest?cb=20240313015938",
 name:"Off-Feild DPS",
 
 sets:[
@@ -615,6 +634,7 @@ substats:{
 
 {
 character:"Chongyun",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/9/9d/Chongyun_Item.png/revision/latest?cb=20210621072658",
 name:"Burst Nuke",
 
 sets:[
@@ -648,6 +668,7 @@ substats:{
 
 {
 character:"Citlali",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/1/16/Citlali_Item.png/revision/latest?cb=20250101131126",
 name:"Buff Support",
 
 sets:[
@@ -680,6 +701,7 @@ substats:{
 
 {
 character:"Clorinde",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/6/65/Clorinde_Item.png/revision/latest?cb=20240605021924",
 name:"DPS (Dendro Teams)",
 
 sets:[
@@ -713,6 +735,7 @@ substats:{
 
 {
 character:"Clorinde",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/6/65/Clorinde_Item.png/revision/latest?cb=20240605021924",
 name:"Electro DPS",
 
 sets:[
@@ -748,6 +771,7 @@ substats:{
 
 {
 character:"Collei",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/0/03/Collei_Item.png/revision/latest?cb=20220825214230",
 name:"Reaction Support",
 
 sets:[
@@ -782,6 +806,7 @@ substats:{
 
 {
 character:"Columbina",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/d/d9/Columbina_Item.png/revision/latest?cb=20260114051929",
 name:"Off-Feild DPS & Buff Support",
 
 sets:[
@@ -814,6 +839,7 @@ substats:{
 
 {
 character:"Columbina",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/d/d9/Columbina_Item.png/revision/latest?cb=20260114051929",
 name:"On-Feild DPS",
 
 sets:[
@@ -843,6 +869,7 @@ substats:{
 },
 {
     character:"Traveler",
+    image:"https://static.wikia.nocookie.net/gensin-impact/images/1/14/Lumine_Item.png/revision/latest?cb=20260521152946",
     name:"Stellar Glimmer DPS",
     sets:[
         {name:"Disenchantment in Deep Shadow",score:30},
@@ -871,6 +898,7 @@ substats:{
 },
 {
     character:"Traveler",
+    image:"https://static.wikia.nocookie.net/gensin-impact/images/1/14/Lumine_Item.png/revision/latest?cb=20260521152946",
     name:"Stellar Glimmer Support",
     sets:[
         {name:"Heart of the Furnace",score:30},
@@ -901,7 +929,7 @@ substats:{
 {
 character:"Cyno",
 name:"Electro DPS",
-
+image:"https://static.wikia.nocookie.net/gensin-impact/images/3/38/Cyno_Item.png/revision/latest?cb=20220928023548",
 sets:[
 {name:"Thundering Fury",score:30},
 {name:"Gladiator's Finale",score:25},
@@ -934,6 +962,7 @@ substats:{
 
 {
 character:"Cyno",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/3/38/Cyno_Item.png/revision/latest?cb=20220928023548",
 name:"Stellar-Conduct DPS",
 
 sets:[
@@ -966,6 +995,7 @@ substats:{
 
 {
 character:"Dahlia",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/2/21/Dahlia_Item.png/revision/latest?cb=20250618025446",
 name:"Sheild Support",
 
 sets:[
@@ -997,6 +1027,7 @@ substats:{
 
 {
 character:"Dehya",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/7/79/Dehya_Item.png/revision/latest?cb=20230301024702",
 name:"Support",
 
 sets:[
@@ -1028,6 +1059,7 @@ substats:{
 
 {
 character:"Traveler",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/1/14/Lumine_Item.png/revision/latest?cb=20260521152946",
 name:"Dendro Reaction Support",
 
 sets:[
@@ -1061,6 +1093,7 @@ substats:{
 
 {
 character:"Diluc",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/8/82/Diluc_Item.png/revision/latest?cb=20210621072659",
 name:"DPS",
 
 sets:[
@@ -1093,6 +1126,7 @@ substats:{
 
 {
 character:"Diona",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/a/aa/Diona_Item.png/revision/latest?cb=20260304040202"
 name:"Heal & Shield Support",
 
 sets:[
@@ -1127,6 +1161,7 @@ substats:{
 
 {
 character:"Dori",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/0/0c/Dori_Item.png/revision/latest?cb=20220910025616",
 name:"Heal Support",
 
 sets:[
@@ -1158,7 +1193,7 @@ substats:{
 
 {
 character:"Durin",
-image: "https://static.wikia.nocookie.net/gensin-impact/images/c/cd/Durin_Item.png/revision/latest?cb=20251204124008",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/c/cd/Durin_Item.png/revision/latest?cb=20251204124008",
 name:"Buff Support & Off Field DPS",
 
 sets:[
@@ -1193,6 +1228,7 @@ substats:{
 
 {
 character:"Durin",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/c/cd/Durin_Item.png/revision/latest?cb=20251204124008",
 name:"Vaporize/Melt Off-Field DPS",
 
 sets:[
@@ -1226,6 +1262,7 @@ substats:{
 
 {
 character:"Traveler",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/1/14/Lumine_Item.png/revision/latest?cb=20260521152946",
 name:"Electro - Energy Support",
 
 sets:[
@@ -1258,6 +1295,7 @@ substats:{
 
 {
 character:"Emilie",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/1/18/Emilie_Item.png/revision/latest?cb=20240806102424",
 name:"Off-Field DPS",
 
 sets:[
@@ -1290,6 +1328,7 @@ substats:{
 
 {
 character:"Escoffier",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/b/b7/Escoffier_Item.png/revision/latest?cb=20250507071602",
 name:"Off-Field DPS",
 
 sets:[
@@ -1323,6 +1362,7 @@ substats:{
 
 {
 character:"Eula",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/7/7c/Eula_Item.png/revision/latest?cb=20210621072702",
 name:"DPS",
 
 sets:[
@@ -1353,6 +1393,7 @@ substats:{
 },
 {
 character:"Faruzan",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/3/32/Faruzan_Item.png/revision/latest?cb=20221207033424",
 name:"Buff Support",
 
 sets:[
@@ -1386,6 +1427,7 @@ substats:{
 
 {
 character:"Fischl",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/e/e8/Fischl_Item.png/revision/latest?cb=20210621072704",
 name:"Off-Field Aggravate DPS",
 
 sets:[
@@ -1420,6 +1462,7 @@ substats:{
 
 {
 character:"Fischl",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/e/e8/Fischl_Item.png/revision/latest?cb=20210621072704",
 name:"Off-Field DPS",
 
 sets:[
@@ -1454,6 +1497,7 @@ substats:{
 
 {
 character:"Flins",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/2/23/Flins_Item.png/revision/latest?cb=20250930200858",
 name:"DPS",
 
 sets:[
@@ -1485,6 +1529,7 @@ substats:{
 
 {
 character:"Freminet",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/2/24/Freminet_Item.png/revision/latest?cb=20230905141238",
 name:"Cryo DPS",
 
 sets:[
@@ -1518,6 +1563,7 @@ substats:{
 
 {
 character:"Freminet",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/2/24/Freminet_Item.png/revision/latest?cb=20230905141238",
 name:"Physical DPS",
 
 sets:[
@@ -1556,6 +1602,7 @@ substats:{
 
 {
 character:"Furina",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/0/07/Furina_Item.png/revision/latest?cb=20231108031053",
 name:"Off-Field DPS & Buff Support",
 
 sets:[
@@ -1587,6 +1634,7 @@ substats:{
 
 {
 character:"Gaming",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Gaming_Item.png/revision/latest?cb=20240131025413",
 name:"DPS",
 
 sets:[
@@ -1621,6 +1669,7 @@ substats:{
 
 {
 character:"Ganyu",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/e/ea/Ganyu_Item.png/revision/latest?cb=20210621072705"
 name:"Freeze DPS",
 
 sets:[
@@ -1653,6 +1702,7 @@ substats:{
 
 {
 character:"Ganyu",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/e/ea/Ganyu_Item.png/revision/latest?cb=20210621072705"
 name:"Cryo DPS",
 
 sets:[
@@ -1684,6 +1734,7 @@ substats:{
 
 {
 character:"Ganyu",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/e/ea/Ganyu_Item.png/revision/latest?cb=20210621072705"
 name:"Melt DPS",
 
 sets:[
@@ -1718,6 +1769,7 @@ substats:{
 
 {
 character:"Traveler",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/1/14/Lumine_Item.png/revision/latest?cb=20260521152946",
 name:"Geo DPS",
 
 sets:[
@@ -1754,6 +1806,7 @@ substats:{
 
 {
 character:"Gorou",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/1/1e/Gorou_Item.png/revision/latest?cb=20211214103025",
 name:"Buff Support",
 
 sets:[
@@ -1786,6 +1839,7 @@ substats:{
 
 {
 character:"Hu Tao",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/d/d3/Hu_Tao_Item.png/revision/latest?cb=20260304040224",
 name:"DPS",
 
 sets:[
@@ -1820,6 +1874,7 @@ substats:{
 
 {
 character:"Traveler",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/1/14/Lumine_Item.png/revision/latest?cb=20260521152946",
 name:"Support - Hydro",
 
 sets:[
@@ -1853,6 +1908,7 @@ substats:{
 
 {
 character:"Iansan",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/7/72/Iansan_Item.png/revision/latest?cb=20250326020737",
 name:"Buff Support",
 
 sets:[
@@ -1885,6 +1941,7 @@ substats:{
 
 {
 character:"Ifa",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/9/95/Ifa_Item.png/revision/latest?cb=20250507055620",
 name:"Anemo DPS",
 
 sets:[
@@ -1919,6 +1976,7 @@ substats:{
 
 {
 character:"Illuga",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/5/5e/Illuga_Item.png/revision/latest?cb=20260205110258",
 name:"Buff Support",
 
 sets:[
@@ -1950,6 +2008,7 @@ substats:{
 
 {
 character:"Ineffa",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/e/ef/Ineffa_Item.png/revision/latest?cb=20250730090559",
 name:"Off-Field DPS & Buff & Shield Support",
 
 sets:[
@@ -1985,6 +2044,7 @@ substats:{
 
 {
 character:"Jahoda",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/3/38/Jahoda_Item.png/revision/latest?cb=20260127111054",
 name:"Off-Feild Reaction DPS & Heal Support",
 
 sets:[
@@ -2018,6 +2078,7 @@ substats:{
 
 {
 character:"Jean",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/e/e7/Jean_Item.png/revision/latest?cb=20260304040253",
 name:"Heal Support & Damage",
 
 sets:[
@@ -2052,6 +2113,7 @@ substats:{
 
 {
 character:"Kachina",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/0/0f/Kachina_Item.png/revision/latest?cb=20240828061519",
 name:"Buff & Reaction Support",
 
 sets:[
@@ -2086,6 +2148,7 @@ substats:{
 
 {
 character:"Kaedehara Kazuha",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/1/18/Kaedehara_Kazuha_Item.png/revision/latest?cb=20210629205730",
 name:"Reaction DPS & Buff Support",
 
 sets:[
@@ -2118,6 +2181,7 @@ substats:{
 
 {
 character:"Kaeya",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/d/de/Kaeya_Item.png/revision/latest?cb=20260304040318",
 name:"Freeze / Mono Cryo",
 
 sets:[
@@ -2152,6 +2216,7 @@ substats:{
 
 {
 character:"Kaeya",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/d/de/Kaeya_Item.png/revision/latest?cb=20260304040318",
 name:"Reverse Melt",
 
 sets:[
@@ -2186,6 +2251,7 @@ substats:{
 
 {
 character:"Kamisato Ayaka",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/9/9c/Kamisato_Ayaka_Item.png/revision/latest?cb=20210721040744",
 name:"DPS",
 
 sets:[
@@ -2217,6 +2283,7 @@ substats:{
 
 {
 character:"Kamisato Ayato",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/1/14/Kamisato_Ayato_Item.png/revision/latest?cb=20220330025024",
 name:"DPS",
 
 sets:[
@@ -2254,6 +2321,7 @@ substats:{
 
 {
 character:"Kaveh",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/8/81/Kaveh_Item.png/revision/latest?cb=20230502113407",
 name:"Bloom / Burgeon Driver",
 
 sets:[
@@ -2288,6 +2356,7 @@ substats:{
 
 {
 character:"Keqing",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/e/ee/Keqing_Item.png/revision/latest?cb=20210621072711",
 name:"Aggravate DPS",
 
 sets:[
@@ -2321,6 +2390,7 @@ substats:{
 
 {
 character:"Keqing",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/e/ee/Keqing_Item.png/revision/latest?cb=20210621072711",
 name:"Quickbloom DPS",
 
 sets:[
@@ -2354,6 +2424,7 @@ substats:{
 
 {
 character:"Kinich",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/3/32/Kinich_Item.png/revision/latest?cb=202409171242300",
 name:"DPS",
 
 sets:[
@@ -2388,6 +2459,7 @@ substats:{
 
 {
 character:"Kirara",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/7/74/Kirara_Item.png/revision/latest?cb=20230524074302",
 name:"Shield Support",
 
 sets:[
@@ -2420,6 +2492,7 @@ substats:{
 
 {
 character:"Klee",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/7/78/Klee_Item.png/revision/latest?cb=20210621072712",
 name:"DPS",
 
 sets:[
@@ -2455,6 +2528,7 @@ substats:{
 
 {
 character:"Kujou Sara",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/9/91/Kujou_Sara_Item.png/revision/latest?cb=20210901042513",
 name:"Buff Support",
 
 sets:[
@@ -2487,6 +2561,7 @@ substats:{
 
 {
 character:"Kuki Shinobu",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/0/0d/Kuki_Shinobu_Item.png/revision/latest?cb=20220621105512",
 name:"Hyperbloom",
 
 sets:[
@@ -2520,6 +2595,7 @@ substats:{
 
 {
 character:"Lan Yan",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/3/3f/Lan_Yan_Item.png/revision/latest?cb=20250124131221",
 name:"Shield & Buff Support",
 
 sets:[
@@ -2551,6 +2627,7 @@ substats:{
 
 {
 character:"Lauma",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/3/37/Lauma_Item.png/revision/latest?cb=20250910024807",
 name:"Buff",
 
 sets:[
@@ -2585,6 +2662,7 @@ substats:{
 
 {
 character:"Layla",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/2/21/Layla_Item.png/revision/latest?cb=20221124092625",
 name:"Sheild Support",
 
 sets:[
@@ -2618,6 +2696,7 @@ substats:{
 
 {
 character:"Layla",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/2/21/Layla_Item.png/revision/latest?cb=20221124092625",
 name:"Sheild Support and Damage",
 
 sets:[
@@ -2651,6 +2730,7 @@ substats:{
 
 {
 character:"Linnea",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/f/f2/Linnea_Item.png/revision/latest?cb=20260408075854",
 name:"off-Field DPS & Buff and Heal Support",
 
 sets:[
@@ -2683,6 +2763,7 @@ substats:{
 
 {
 character:"Lisa",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/5/51/Lisa_Item.png/revision/latest?cb=20210621072713",
 name:"Aggravate DPS",
 
 sets:[
@@ -2716,6 +2797,7 @@ substats:{
 
 {
 character:"Lisa",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/5/51/Lisa_Item.png/revision/latest?cb=20210621072713",
 name:"Off-Field DPS & Support",
 
 sets:[
@@ -2752,6 +2834,7 @@ substats:{
 
 {
 character:"Lohen",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/a/af/Lohen_Item.png/revision/latest?cb=20260609140731",
 name:"DPS",
 
 sets:[
@@ -2786,6 +2869,7 @@ substats:{
 
 {
 character:"Lynette",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/5/53/Lynette_Item.png/revision/latest?cb=20230816114257",
 name:"Off-Field DPS",
 
 sets:[
@@ -2819,6 +2903,7 @@ substats:{
 
 {
 character:"Lyney",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/d/d8/Lyney_Item.png/revision/latest?cb=20230816114255",
 name:"DPS",
 
 sets:[
@@ -2856,6 +2941,7 @@ substats:{
 
 {
 character:"Mavuika",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Mavuika_Item.png/revision/latest?cb=20250101130140",
 name:"DPS & Buff Support",
 
 sets:[
@@ -2890,6 +2976,7 @@ substats:{
 
 {
 character:"Mika",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/5/5c/Mika_Item.png/revision/latest?cb=20230321101924",
 name:"Heal & Buff Support",
 
 sets:[
@@ -2924,6 +3011,7 @@ substats:{
 
 {
     character:"Mitya",
+    image:"https://static.wikia.nocookie.net/gensin-impact/images/0/08/Mitya_Item.png/revision/latest?cb=20261104022120",
     name:"On-Field DPS",
     sets:[
         {name:"Disenchantment in Deep Shadow",score:30},
@@ -2952,6 +3040,7 @@ substats:{
 
 {
 character:"Mona",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/0/03/Mona_Item.png/revision/latest?cb=20260304040343",
 name:"Buff Support",
 
 sets:[
@@ -2986,6 +3075,7 @@ substats:{
 
 {
 character:"Mualani",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/5/5d/Mualani_Item.png/revision/latest?cb=20240828060917",
 name:"Vaporize DPS",
 
 sets:[
@@ -3019,6 +3109,7 @@ substats:{
 
 {
 character:"Nahida",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/a/ab/Nahida_Item.png/revision/latest?cb=20221102032035",
 name:"Buff Support & Damage",
 
 sets:[
@@ -3054,6 +3145,7 @@ substats:{
 
 {
 character:"Navia",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/0/0d/Navia_Item.png/revision/latest?cb=20231220022138",
 name:"DPS",
 
 sets:[
@@ -3088,6 +3180,7 @@ substats:{
 
 {
 character:"Nefer",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/e/ef/Nefer_Item.png/revision/latest?cb=20251022051847",
 name:"DPS",
 
 sets:[
@@ -3119,6 +3212,7 @@ substats:{
 
 {
 character:"Nevuillette",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/3/35/Neuvillette_Item.png/revision/latest?cb=20230927113115",
 name:"DPS",
 
 sets:[
@@ -3154,6 +3248,7 @@ substats:{
 
 {
 character:"Nicole",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/a/a5/Nicole_Item.png/revision/latest?cb=20260520063721",
 name:"Shield & Buff Support",
 
 sets:[
@@ -3186,6 +3281,7 @@ substats:{
 
 {
 character:"Nilou",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/d/d2/Nilou_Item.png/revision/latest?cb=20221014113744",
 name:"Bloom Support",
 
 sets:[
@@ -3219,6 +3315,7 @@ substats:{
 
 {
 character:"Ningguang",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/e/ee/Ningguang_Item.png/revision/latest?cb=20260304040407",
 name:"DPS",
 
 sets:[
@@ -3254,6 +3351,7 @@ substats:{
 
 {
 character:"Noelle",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/5/5b/Noelle_Item.png/revision/latest?cb=20210621072719",
 name:"DPS",
 
 sets:[
@@ -3288,6 +3386,7 @@ substats:{
 
 {
 character:"Noelle",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/5/5b/Noelle_Item.png/revision/latest?cb=20210621072719",
 name:"Driver",
 
 sets:[
@@ -3321,6 +3420,7 @@ substats:{
 },
 {
     character:"Noelle",
+    image:"https://static.wikia.nocookie.net/gensin-impact/images/5/5b/Noelle_Item.png/revision/latest?cb=20210621072719",
     name:"Lunar-Crystallize DPS",
     sets:[
         {name:"Husk of Opulent Dreams",score:30},
@@ -3350,6 +3450,7 @@ substats:{
 },
 {
     character:"Odette",
+    image:"https://static.wikia.nocookie.net/gensin-impact/images/8/88/Odette_Item.png/revision/latest?cb=20260812033959",
     name:"Off-field DPS",
     sets:[
         {name:"Heart of the Furnace",score:30},
@@ -3380,6 +3481,7 @@ substats:{
 },
 {
 character:"Ororon",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/6/67/Ororon_Item.png/revision/latest?cb=20241120132631",
 name:"Off-Field DPS",
 
 sets:[
@@ -3412,6 +3514,7 @@ substats:{
 
 {
 character:"Ororon",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/6/67/Ororon_Item.png/revision/latest?cb=20241120132631",
 name:"Off-Field Reaction DPS",
 
 sets:[
@@ -3444,6 +3547,7 @@ substats:{
 
 {
 character:"Prune",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/9/9d/Prune_Item.png/revision/latest?cb=20260520080023",
 name:"Buff Support",
 
 sets:[
@@ -3476,6 +3580,7 @@ substats:{
 
 {
     character:"Traveler",
+    image:"https://static.wikia.nocookie.net/gensin-impact/images/1/14/Lumine_Item.png/revision/latest?cb=20260521152946",
     name:"Pyro DPS",
     sets:[
         {name:"Obsidian Codex",score:30},
@@ -3506,6 +3611,7 @@ substats:{
 
 {
 character:"Traveler",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/1/14/Lumine_Item.png/revision/latest?cb=20260521152946",
 name:"Pyro Buff Support",
 
 sets:[
@@ -3539,6 +3645,7 @@ substats:{
 
 {
 character:"Qiqi",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/c/c3/Qiqi_Item.png/revision/latest?cb=20210621072721",
 name:"Heal & Buff Support",
 
 sets:[
@@ -3572,6 +3679,7 @@ substats:{
 
 {
 character:"Raiden Shogun",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/b/bc/Raiden_Shogun_Item.png/revision/latest?cb=20240717071804",
 name:"DPS & Energy Support",
 
 sets:[
@@ -3603,6 +3711,7 @@ substats:{
 
 {
 character:"Razor",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Razor_Item.png/revision/latest?cb=20210621072722",
 name:"DPS",
 
 sets:[
@@ -3638,6 +3747,7 @@ substats:{
 
 {
 character:"Rosaria",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/a/a5/Rosaria_Item.png/revision/latest?cb=20210621072723",
 name:"Buff Support",
 
 sets:[
@@ -3670,6 +3780,7 @@ substats:{
 
 {
 character:"Rosaria",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/a/a5/Rosaria_Item.png/revision/latest?cb=20210621072723",
 name:"Freeze",
 
 sets:[
@@ -3702,6 +3813,7 @@ substats:{
 
 {
 character:"Rosaria",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/a/a5/Rosaria_Item.png/revision/latest?cb=20210621072723",
 name:"Reverse Melt",
 
 sets:[
@@ -3733,6 +3845,7 @@ substats:{
 
 {
 character:"Sandrone",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/1/1b/Sandrone_Item.png/revision/latest?cb=20260701022140",
 name:"DPS",
 
 sets:[
@@ -3764,6 +3877,7 @@ substats:{
 
 {
 character:"Sangonomiya Kokomi",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/3/34/Sangonomiya_Kokomi_Item.png/revision/latest?cb=20210921144931",
 name:"Heal Support",
 
 sets:[
@@ -3798,6 +3912,7 @@ substats:{
 
 {
 character:"Sayu",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/2/25/Sayu_Item.png/revision/latest?cb=20210810103116",
 name:"Heal Support",
 
 sets:[
@@ -3830,6 +3945,7 @@ substats:{
 
 {
 character:"Sethos",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/6/65/Sethos_Item.png/revision/latest?cb=20240605022433",
 name:"Charged Attack DPS",
 
 sets:[
@@ -3862,6 +3978,7 @@ substats:{
 
 {
 character:"Sethos",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/6/65/Sethos_Item.png/revision/latest?cb=20240605022433",
 name:"Normal Attack DPS",
 
 sets:[
@@ -3895,6 +4012,7 @@ substats:{
 
 {
 character:"Shenhe",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/4/44/Shenhe_Item.png/revision/latest?cb=20220105040849",
 name:"Buff Support",
 
 sets:[
@@ -3926,6 +4044,7 @@ substats:{
 
 {
 character:"Shikanoin Heizou",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/4/4a/Shikanoin_Heizou_Item.png/revision/latest?cb=20220713061110",
 name:"Anemo DPS",
 
 sets:[
@@ -3958,6 +4077,7 @@ substats:{
 
 {
 character:"Shikanoin Heizou",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/4/4a/Shikanoin_Heizou_Item.png/revision/latest?cb=20220713061110",
 name:"Reaction DPS",
 
 sets:[
@@ -3989,6 +4109,7 @@ substats:{
 
 {
 character:"Sigewinne",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/1/1e/Sigewinne_Item.png/revision/latest?cb=20240625101902",
 name:"Heal Support",
 
 sets:[
@@ -4022,6 +4143,7 @@ substats:{
 
 {
 character:"Skirk",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/0/04/Skirk_Item.png/revision/latest?cb=20250618025148",
 name:"DPS",
 
 sets:[
@@ -4056,6 +4178,7 @@ substats:{
 
 {
 character:"Sucrose",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Sucrose_Item.png/revision/latest?cb=20210621072725",
 name:"Elemental Mastery Support",
 
 sets:[
@@ -4086,6 +4209,7 @@ substats:{
 
 {
 character:"Tartaglia",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/d/d5/Tartaglia_Item.png/revision/latest?cb=20210621072726",
 name:"DPS",
 
 sets:[
@@ -4118,6 +4242,7 @@ substats:{
 
 {
 character:"Thoma",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/a/a9/Thoma_Item.png/revision/latest?cb=20211102104019",
 name:"Burgeon Support",
 
 sets:[
@@ -4150,6 +4275,7 @@ substats:{
 
 {
 character:"Tighnari",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/b/b3/Tighnari_Item.png/revision/latest?cb=20220825214234",
 name:"Quick Swap DPS",
 
 sets:[
@@ -4182,6 +4308,7 @@ substats:{
 },
 {
     character:"Valeriy",
+    image:"https://static.wikia.nocookie.net/gensin-impact/images/4/48/Valeriy_Item.png/revision/latest?cb=20261104022720",
     name:"Buff & Shield Support",
     sets:[
         {name:"Heart of the Furnace",score:30},
@@ -4210,6 +4337,7 @@ substats:{
 },
 {
 character:"Varesa",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Varesa_Item.png/revision/latest?cb=20250326020741",
 name:"Plunge DPS",
 
 sets:[
@@ -4242,6 +4370,7 @@ substats:{
 
 {
 character:"Varka",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Varka_Item.png/revision/latest?cb=20260225073916",
 name:"DPS",
 
 sets:[
@@ -4275,6 +4404,7 @@ substats:{
 
 {
 character:"Venti",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/5/58/Venti_Item.png/revision/latest?cb=20210621072728",
 name:"Off-Field DPS",
 
 sets:[
@@ -4310,6 +4440,7 @@ substats:{
 
 {
 character:"Venti",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/5/58/Venti_Item.png/revision/latest?cb=20210621072728",
 name:"On-Field DPS",
 
 sets:[
@@ -4343,6 +4474,7 @@ substats:{
 
 {
     character:"Vesna",
+    image:"https://static.wikia.nocookie.net/gensin-impact/images/a/af/Vesna_Item.png/revision/latest?cb=20260923165759",
     name:"Stellar Swirl DPS",
     sets:[
         {name:"Scarlet Proof",score:30},
@@ -4371,6 +4503,7 @@ substats:{
 },
 {
     character:"Vodyanitsa",
+    image:"https://static.wikia.nocookie.net/gensin-impact/images/7/7d/Vodyanitsa_Item.png/revision/latest?cb=20260923165407",
     name:"Heal & Buff Support",
     sets:[
         {name:"Tenacity of the Millelith",score:30},
@@ -4400,6 +4533,7 @@ substats:{
 },
 {
 character:"Wanderer",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/b/b1/Wanderer_Item.png/revision/latest?cb=20221207033426",
 name:"DPS",
 
 sets:[
@@ -4434,6 +4568,7 @@ substats:{
 
 {
 character:"Wriothesley",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/f/fb/Wriothesley_Item.png/revision/latest?cb=20231017103332",
 name:"Melt DPS",
 
 sets:[
@@ -4467,6 +4602,7 @@ substats:{
 
 {
 character:"Wriothesley",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/f/fb/Wriothesley_Item.png/revision/latest?cb=20231017103332",
 name:"Mono Cryo / Freeze DPS",
 
 sets:[
@@ -4498,6 +4634,7 @@ substats:{
 },
 {
     character:"Wriothesley",
+    image:"https://static.wikia.nocookie.net/gensin-impact/images/f/fb/Wriothesley_Item.png/revision/latest?cb=20231017103332",
     name:"Stellar-Conduct DPS",
     sets:[
         {name:"Disenchantment in Deep Shadow",score:30},
@@ -4529,6 +4666,7 @@ substats:{
 
 {
 character:"Xiangling",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Xiangling_Item.png/revision/latest?cb=20210621072729",
 name:"Off-Field DPS",
 
 sets:[
@@ -4563,6 +4701,7 @@ substats:{
 
 {
 character:"Xianyun",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Xianyun_Item.png/revision/latest?cb=20240131024554",
 name:"Buff & Heal Support",
 
 sets:[
@@ -4597,6 +4736,7 @@ substats:{
 
 {
 character:"Xiao",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/1/11/Xiao_Item.png/revision/latest?cb=20210621072730",
 name:"DPS",
 
 sets:[
@@ -4630,6 +4770,7 @@ substats:{
 
 {
 character:"Xilonen",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/a/ab/Xilonen_Item.png/revision/latest?cb=20241009114730",
 name:"Buff & Reaction Support",
 
 sets:[
@@ -4662,6 +4803,7 @@ substats:{
 
 {
 character:"Xingqiu",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/5/52/Xingqiu_Item.png/revision/latest?cb=20260304040420",
 name:"Off-Field DPS",
 
 sets:[
@@ -4697,6 +4839,7 @@ substats:{
 
 {
 character:"Xinyan",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/5/59/Xinyan_Item.png/revision/latest?cb=20260304040443",
 name:"Physical DPS",
 
 sets:[
@@ -4729,6 +4872,7 @@ substats:{
 },
 {
     character:"Xinyan",
+    image:"https://static.wikia.nocookie.net/gensin-impact/images/5/59/Xinyan_Item.png/revision/latest?cb=20260304040443",
     name:"Shield Support",
     sets:[
         {name:"Tenacity of the Millelith",score:30},
@@ -4758,6 +4902,7 @@ substats:{
 
 {
 character:"Yae Miko",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/7/77/Yae_Miko_Item.png/revision/latest?cb=20220216070129",
 name:"Stellar Conduct Off-Field DPS",
 
 sets:[
@@ -4790,6 +4935,7 @@ substats:{
 
 {
 character:"Yanfei",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/b/bf/Yanfei_Item.png/revision/latest?cb=20260304040508",
 name:"Vaporise DPS",
 
 sets:[
@@ -4823,6 +4969,7 @@ substats:{
 
 {
 character:"Yaoyao",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Yaoyao_Item.png/revision/latest?cb=20230118023140",
 name:"Heal Support",
 
 sets:[
@@ -4858,6 +5005,7 @@ substats:{
 
 {
 character:"Yelan",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/e/ea/Yelan_Item.png/revision/latest?cb=20220531064319",
 name:"Off-Field DPS",
 
 sets:[
@@ -4889,6 +5037,7 @@ substats:{
 
 {
 character:"Yoimiya",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/b/b4/Yoimiya_Item.png/revision/latest?cb=20210810103711",
 name:"Overload DPS",
 
 sets:[
@@ -4919,6 +5068,7 @@ substats:{
 },
 {
     character:"Yoimiya",
+    image:"https://static.wikia.nocookie.net/gensin-impact/images/b/b4/Yoimiya_Item.png/revision/latest?cb=20210810103711",
     name:"Vaporize/Melt DPS",
     sets:[
         {name:"Shimenawa's Reminiscence",score:30},
@@ -4949,6 +5099,7 @@ substats:{
 
 {
 character:"Yumemizuki Mizuki",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/5/5d/Yumemizuki_Mizuki_Item.png/revision/latest?cb=20250212083414",
 name:"Reaction DPS",
 
 sets:[
@@ -4978,6 +5129,7 @@ substats:{
 },
 {
     character:"Yumemizuki Mizuki",
+    image:"https://static.wikia.nocookie.net/gensin-impact/images/5/5d/Yumemizuki_Mizuki_Item.png/revision/latest?cb=20250212083414",
     name:"Stellar Swirl DPS",
     sets:[
         {name:"Gilded Dreams",score:30},
@@ -5006,6 +5158,7 @@ substats:{
 
 {
 character:"Yun Jin",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/3/30/Yun_Jin_Item.png/revision/latest?cb=20220105040851",
 name:"Buff Support",
 
 sets:[
@@ -5038,6 +5191,7 @@ substats:{
 
 {
 character:"Zhongli",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/b/b1/Zhongli_Item.png/revision/latest?cb=20210621072736",
 name:"Shield Support",
 
 sets:[
@@ -5071,6 +5225,7 @@ substats:{
 
 {
 character:"Zibai",
+image:"https://static.wikia.nocookie.net/gensin-impact/images/f/f1/Zibai_Item.png/revision/latest?cb=20260205111249",
 name:"DPS",
 
 sets:[
